@@ -42,5 +42,4 @@ def create_app(config_name):
     from .user_profile import user_profile as user_profile_blueprint
     app.register_blueprint(user_profile_blueprint)
 
-
     return app
