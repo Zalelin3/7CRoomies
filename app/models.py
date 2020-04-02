@@ -25,7 +25,7 @@ class User(UserMixin, db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(60), index=True, unique=True)
-	username = db.Column(db.String(60), index=True, unique=True)
+    username = db.Column(db.String(60), index=True, unique=True)
     first_name = db.Column(db.String(60), index=True)
     last_name = db.Column(db.String(60), index=True)
     password_hash = db.Column(db.String(128))
@@ -42,7 +42,7 @@ class User(UserMixin, db.Model):
     bedtime = db.Column(db.Integer)
     partyFreq = db.Column(db.Integer)
     visitorFreq = db.Column(db.Integer)
-    post_id = db.Column(db.Integer, db.ForeignKey('post.id'))
+    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
     status = db.relationship('Live', backref='user', uselist=False)
     ghost_users = db.relationship('Ghost_User', backref='user', lazy=True)
 
