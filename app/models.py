@@ -43,7 +43,8 @@ class User(UserMixin, db.Model):
     bedtime = db.Column(db.Integer, index=True)
     partyFreq = db.Column(db.Integer, index=True)
     visitorFreq = db.Column(db.Integer, index=True)
-    post_id = db.relationship('Post', backref='user', uselist=False)
+    post_id = db.Column(db.Integer, db.ForeignKey('post.id'),
+        nullable=True)
     status = db.relationship('Live', backref='user', uselist=False)
     ghost_users = db.relationship('Ghost_User', backref='user', lazy=True)
 
@@ -85,7 +86,7 @@ class Pet(db.Model):
     __tablename__ = 'pets'
 
     name = db.Column(db.String(60), primary_key=True)
-    description = db.Column(db.String(200)) #should we add description?
+    #description = db.Column(db.String(200), nullable=True) #should we add description?
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'),
         nullable=False, primary_key=True)
 
@@ -119,8 +120,7 @@ class Post(db.Model):
     title = db.Column(db.String(60), nullable=False)
     description = db.Column(db.String(200), nullable=False, index=False)
     capacity = db.Column(db.Integer)
-    owner_id = db.Column(db.Integer, db.ForeignKey('user.id'),
-        nullable=False)
+    owner_id = db.relationship('User', backref='posts', lazy=True)
     images= db.relationship('Image', backref= 'posts', lazy=True)
     lives = db.relationship('Live', backref= 'posts', lazy=True)
 
@@ -142,18 +142,18 @@ class Ghost_User(db.Model):
     def __repr__(self):
         return '<Ghost_User: {}>'.format(self.email)
 
-class Image(db.Model):
-    """
-    Create a Image table
-    """
-    __tablename__ = 'images'
+# class Image(db.Model):
+#     """
+#     Create a Image table
+#     """
+#     __tablename__ = 'images'
 
-    id = db.Column(db.Integer, primary_key=True)
-    images = db.Column(db.LargeBinary)
-    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), nullable=False)
+#     id = db.Column(db.Integer, primary_key=True)
+#     images = db.Column(db.LargeBinary)
+#     post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), nullable=False)
 
-    def __repr__(self):
-        return '<Images: {}>'.format(self.id)
+#     def __repr__(self):
+#         return '<Images: {}>'.format(self.id)
 
 class On_campus(db.Model):
     """
@@ -163,9 +163,9 @@ class On_campus(db.Model):
 
     post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), nullable=False, primary_key=True)
     college = db.Column(db.Integer, nullable=False)
-    dorm_1 = db.Column(db.String(60), index = True)
-    dorm_2 = db.Column(db.String(60), index = True)
-    dorm_3 = db.Column(db.String(60), index = True)
+    dorm_1 = db.Column(db.String(60))
+    dorm_2 = db.Column(db.String(60))
+    dorm_3 = db.Column(db.String(60))
     drawNo = db.Column(db.Integer)
     nSingles = db.Column(db.Integer, index=True, default = 0)
     nDoubles = db.Column(db.Integer, index=True, default = 0)
@@ -182,12 +182,12 @@ class Off_campus(db.Model):
     __tablename__ = 'offcampus'
 
     post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), nullable=False, primary_key=True)
-    price = db.Column(db.Integer, nullable=False)
-    street = db.Column(db.String(100), nullable =False)
+    price = db.Column(db.Integer, nullable=True)
+    street = db.Column(db.String(100), nullable =True)
     city = db.Column(db.String(60), index = True, nullable =False)
     state = db.Column(db.String(60), index = True, nullable =False )
-    country = db.Column(db.String(60), index = True, nullable =False)
-    zipcode = db.Column(db.Integer, index = True, nullable =False)
+    # country = db.Column(db.String(60), index = True, nullable =False)
+    zipcode = db.Column(db.Integer, index = True, nullable =True)
     nParking = db.Column(db.Integer, index=True, default= 0)
     nRoom = db.Column(db.Integer, index=True, default = 0)
     nBathroom = db.Column(db.Integer, index=True, default = 0)
