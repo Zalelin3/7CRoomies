@@ -17,4 +17,85 @@
         </div>
     </div>
 </div>
+
+<section class="contact-section section_padding">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12">
+          <h2 class="contact-title">Part 1: Basic Info</h2>
+        </div>
+        <div class="col-lg-8">
+          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder = 'Enter your name'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder = 'Enter email address'>
+                </div>
+              </div>
+              <!--Select Home Campus-->
+              <div class="col-lg-3 col-md-4">
+                <div class="single_input">
+                    <select class="wide" >
+                        <option data-display="Category">Select Home Campus</option>
+                        <option value="1">Harvey Mudd</option>
+                        <option value="2">Pitzer</option>
+                        <option value="3">Scripps</option>
+                        <option value="4">CMC</option>
+                        <option value="5">Pomona</option>
+                        <option value="6">CGU</option>
+                        <option value="7">Keck</option>
+                      </select>
+                </div>
+              </div>
+              <!--Select Gender-->
+              <div class="col-lg-3 col-md-4">
+                <div class="single_input">
+                    <select class="wide" >
+                        <option data-display="Category">Select Gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Non-Binary</option>
+                        <option value="4">Other</option>
+                      </select>
+                </div>
+              </div>
+              <!--List other roommates-->
+              <h4>Have other roommates already? List them here:</h4>
+              <div class="form-group mt-3">
+                <button type="submit" class="button button-contactForm btn_4 boxed-btn">Add Roommate</button>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <button type="submit" class="button button-contactForm btn_4 boxed-btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+            <h2 class="contact-title">Part 2: Room Preferences</h2>
+        </div>
+        <!--Allergies?-->
+        <!--Pets OK?-->
+        <!--Bed time-->
+        <!--wake up time-->
+        <!--messy level-->
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+            <h2 class="contact-title">Part 3: Social Preferences</h2>
+        </div>
+        <!--social level-->
+        <!--noise level-->
+      </div>
+      </div>
+  </section>
 {% endblock %}
