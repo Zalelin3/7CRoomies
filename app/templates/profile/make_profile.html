@@ -26,7 +26,7 @@
           <h2 class="contact-title">Part 1: Basic Info</h2>
         </div>
         <div class="col-lg-8">
-          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+          <!-- <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate"> -->
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
@@ -65,16 +65,17 @@
                       </select>
                 </div>
               </div>
-              <!--List other roommates-->
-              <h4>Have other roommates already? List them here:</h4>
-              <div class="form-group mt-3">
-                <button type="submit" class="button button-contactForm btn_4 boxed-btn">Add Roommate</button>
-              </div>
             </div>
-            <div class="form-group mt-3">
-              <button type="submit" class="button button-contactForm btn_4 boxed-btn">Send Message</button>
-            </div>
-          </form>
+          <!-- </form> -->
+        </div>
+      </div>
+
+      <div class="row" id="roommateRow">
+        <!--List other roommates-->
+        <h4>Have other roommates already? List them here:</h4>
+        <div class="form-group mt-3">
+          <button type="submit" class="button button-contactForm btn_4 boxed-btn" id="addRoommate" 
+            onclick="addRoommateBox('roommateRow')">Add Roommate</button>
         </div>
       </div>
 
@@ -83,10 +84,52 @@
             <h2 class="contact-title">Part 2: Room Preferences</h2>
         </div>
         <!--Allergies?-->
+        <fieldset>      
+          <legend>Do you have any allergies to pets?</legend>      
+          <input type="checkbox" name="allergy" value="Cats">Cats<br>      
+          <input type="checkbox" name="allergy" value="Dogs">Dogs<br>      
+          <input type="checkbox" name="allergy" value="Other">Other<br>      
+          <!-- <br>       -->
+        </fieldset>
         <!--Pets OK?-->
+        <div class="slider-div">
+          <label for="petsOKSwitch">Pets OK: </label>
+          <label class="switch" id="petsOKSwitch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+          </label>
+        </div>
         <!--Bed time-->
+        <div class="single_input">
+          <select class="wide">
+              <option data-display="Typical Bed Time">Typical Bed Time</option>
+              <option value="1">Before 10 PM</option>
+              <option value="2">10PM-12AM</option>
+              <option value="3">12-2 AM</option>
+              <option value="4">After 2 AM</option>
+            </select>
+        </div>
         <!--wake up time-->
+        <div class="single_input">
+          <select class="wide">
+              <option data-display="Typical Wake Up Time">Typical Wake Up Time</option>
+              <option value="1">Before 6 AM</option>
+              <option value="2">6-8 AM</option>
+              <option value="3">8-10 AM</option>
+              <option value="4">After 10 AM</option>
+            </select>
+        </div>
         <!--messy level-->
+        <div class="single_input">
+          <select class="wide" id="messy_level_range">
+              <option data-display="Messy Level">Messy Level</option>
+              <option value="1">1 (very clean)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (very messy)</option>
+          </select>
+        </div>
       </div>
 
       <div class="row">
@@ -94,8 +137,32 @@
             <h2 class="contact-title">Part 3: Social Preferences</h2>
         </div>
         <!--social level-->
+        <div class="single_input">
+          <select class="wide" id="social_level_range">
+              <option data-display="Social Level">Social Level</option>
+              <option value="1">1 (no guests)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (parties OK)</option>
+          </select>
+        </div>
         <!--noise level-->
+        <div class="single_input">
+          <select class="wide" id="noise_level_range">
+              <option data-display="Noise Level">Noise Level</option>
+              <option value="1">1 (quiet)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (loud)</option>
+            </select>
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <button type="submit" class="button button-contactForm btn_4 boxed-btn" id="submitProfile">Create Profile</button>
       </div>
       </div>
+      
   </section>
 {% endblock %}

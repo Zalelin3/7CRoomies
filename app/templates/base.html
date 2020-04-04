@@ -8,6 +8,35 @@
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favorite.ico') }}">
 </head>
+<script>
+    var roommateCount = 0;
+
+    function addRoommateBox(parentId) {
+        var p = document.getElementById(parentId);
+
+        // add email text box
+        var emailBox = document.createElement("input");
+        emailBox.setAttribute('id', "ghostEmail" + roommateCount);
+        emailBox.setAttribute('type', 'email');
+        emailBox.setAttribute('placeholder', 'Enter roommate email');
+        emailBox.setAttribute('onfocus', "this.placeholder=''");
+        p.appendChild(emailBox);
+        // add first name text box
+        var nameBox = document.createElement("input");
+        nameBox.setAttribute('id', "ghostName" + roommateCount);
+        nameBox.setAttribute('type', 'text');
+        nameBox.setAttribute('placeholder', 'Enter roommate name');
+        nameBox.setAttribute('onfocus', "this.placeholder=''");
+        p.appendChild(nameBox);
+        roommateCount += 1;
+
+        // var newElement = document.createElement(elementTag);
+        // newElement.setAttribute('id', elementId);
+        // newElement.setAttribute('type', 'text');
+        // newElement.innerHTML = html;
+        // p.appendChild(newElement);
+    }
+</script>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -30,6 +59,7 @@
                     <li><a href="{{ url_for('profile.make_profile') }}">Make A Profile</a></li>
                     <!-- If user has a profile -->
                     <li><a href="{{ url_for('profile.profile') }}">View My Profile</a></li>
+                    <li><a href="{{ url_for('post.make_post') }}">Make a Post</a></li>
                     <li><a href="{{ url_for('home.dashboard') }}">Dashboard</a></li>
                     <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
                     <li><a><i class="fa fa-user"></i>  Hi, {{ current_user.username }}!</a></li>
