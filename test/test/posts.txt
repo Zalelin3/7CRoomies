@@ -1,0 +1,300 @@
+1	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	7	\N	\N	\N
+2	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+3	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+4	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+5	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+6	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+7	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+8	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+9	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+10	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+11	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+12	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+13	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+14	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+15	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+16	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+17	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+18	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+19	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+20	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+21	0	Looking for a suitemate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+22	0	Looking for a suitemate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+23	0	Looking for suitemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+24	0	Looking for suitemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+25	0	Searching for suitemate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+26	0	Searching for suitemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+27	0	Looking for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+28	0	Looking for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+29	0	Looking for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+30	0	Looking for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+31	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+32	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+33	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+34	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+35	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+36	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+37	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+38	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+39	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+40	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+41	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+42	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+43	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+44	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+45	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+46	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+47	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+48	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+49	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	7	\N	\N	\N
+50	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+51	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+52	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+53	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+54	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+55	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+56	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+57	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+58	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+59	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+60	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+61	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+62	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+63	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	7	\N	\N	\N
+64	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+65	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+66	0	Looking for a suitemate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+67	0	Looking for a suitemate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+68	0	Looking for suitemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+69	0	Looking for suitemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+70	0	Searching for suitemate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+71	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+72	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+73	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+74	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+75	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+76	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+77	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+78	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+79	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+80	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+81	0	Searching for suitemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+82	0	Looking for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+83	0	Looking for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+84	0	Looking for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+85	0	Looking for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+86	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+87	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+88	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+89	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+90	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+91	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+92	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+93	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+94	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+95	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+96	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+97	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+98	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+99	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+100	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+101	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+102	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+103	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+104	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	7	\N	\N	\N
+105	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+106	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+107	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+108	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	7	\N	\N	\N
+109	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+110	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+111	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+112	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+113	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+114	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+115	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+116	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+117	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+118	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+119	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+120	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+121	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+122	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+123	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+124	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+125	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+126	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+127	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+128	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+129	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+130	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+131	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+132	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+133	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+134	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+135	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+136	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+137	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+138	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+139	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+140	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+141	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+142	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+143	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+144	0	Looking for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+145	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+146	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+147	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+148	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+149	0	Searching for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+150	0	Looking for a suitemate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+151	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+152	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+153	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+154	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+155	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+156	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+157	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+158	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+159	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+160	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+161	0	Looking for a suitemate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+162	0	Looking for suitemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+163	0	Looking for suitemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+164	0	Searching for suitemate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+165	0	Searching for suitemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+166	0	Looking for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+167	0	Looking for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+168	0	Looking for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+169	0	Looking for a roommate	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	7	\N	\N	\N
+170	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+171	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+172	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+173	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+174	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+175	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+176	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+177	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+178	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+179	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+180	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+181	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+182	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+183	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	7	\N	\N	\N
+184	0	Searching for roommates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+185	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+186	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+187	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+188	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	7	\N	\N	\N
+189	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+190	0	Wanna share a suite?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+191	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+192	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+193	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+194	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	7	\N	\N	\N
+195	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	8	\N	\N	\N
+196	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	9	\N	\N	\N
+197	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+198	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+199	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+200	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+211	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+212	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+213	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+214	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+215	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+216	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+217	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+218	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+219	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+220	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+231	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+232	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+233	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+234	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+235	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+236	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+237	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+238	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+239	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+240	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+251	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+252	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+253	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+254	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+255	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+256	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+257	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+258	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+259	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+260	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+271	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+272	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+273	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+274	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+275	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+276	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+277	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+278	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+279	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+280	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+291	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+292	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+293	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	7	\N	\N	\N
+294	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	8	\N	\N	\N
+295	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	9	\N	\N	\N
+296	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+297	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+298	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+299	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+300	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+311	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+312	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+313	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+314	0	Spots available in a house!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+315	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+316	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+317	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+318	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+319	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+320	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	7	\N	\N	\N
+331	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	8	\N	\N	\N
+332	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	9	\N	\N	\N
+333	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+334	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+335	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+336	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+337	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+338	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+339	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+340	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+351	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+352	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+353	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+354	0	Cheap house nearby!	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+355	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+356	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+357	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	7	\N	\N	\N
+358	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	8	\N	\N	\N
+359	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	9	\N	\N	\N
+360	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+371	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+372	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+373	0	Needs a few housemates	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+374	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+375	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+376	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+377	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+378	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+379	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+380	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+391	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+392	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N
+393	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	6	\N	\N	\N
+394	0	Wanna share a room?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	7	\N	\N	\N
+395	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	8	\N	\N	\N
+396	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	9	\N	\N	\N
+397	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	2	\N	\N	\N
+398	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	3	\N	\N	\N
+399	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	4	\N	\N	\N
+400	0	Wanna share a house?	Looking for nice people to live with! Please join me! Also please email me directly if I don't respond to your interest.	5	\N	\N	\N

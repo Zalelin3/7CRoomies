@@ -1,0 +1,150 @@
+cow's milk	1
+egg	2
+nut	3
+nuts	4
+peanut	5
+shellfish	6
+crab	7
+shrimp	8
+wheat	9
+soy	10
+fish	1
+pollen	1
+dust mite	1
+insect sting	1
+spider	1
+dog's fur	1
+cat's fur	1
+cow's milk	2
+nut	2
+almond	2
+almond	3
+fish	3
+fish	4
+almond	4
+cow's milk	6
+egg	8
+nut	10
+nuts	12
+peanut	14
+shellfish	16
+crab	18
+shrimp	20
+wheat	22
+soy	24
+fish	26
+pollen	28
+dust mite	30
+insect sting	32
+spider	34
+dog's fur	36
+cat's fur	38
+cow's milk	40
+egg	42
+nut	44
+nuts	46
+peanut	48
+shellfish	50
+crab	52
+shrimp	54
+wheat	56
+soy	58
+fish	60
+pollen	62
+dust mite	64
+insect sting	66
+spider	68
+dog's fur	70
+cat's fur	72
+cow's milk	74
+egg	76
+nut	78
+nuts	80
+peanut	82
+shellfish	84
+crab	86
+shrimp	88
+wheat	90
+soy	92
+fish	94
+pollen	96
+dust mite	98
+insect sting	100
+spider	102
+dog's fur	104
+cat's fur	106
+cow's milk	108
+egg	110
+nut	112
+nuts	114
+peanut	116
+shellfish	118
+crab	120
+shrimp	122
+wheat	124
+soy	126
+fish	128
+pollen	130
+dust mite	132
+insect sting	134
+spider	136
+dog's fur	138
+cat's fur	140
+peanut	142
+peanut	144
+peanut	146
+peanut	148
+peanut	150
+peanut	152
+peanut	154
+peanut	156
+peanut	158
+peanut	160
+peanut	162
+peanut	164
+peanut	166
+peanut	168
+peanut	170
+peanut	172
+peanut	174
+peanut	176
+peanut	178
+peanut	180
+peanut	182
+peanut	184
+peanut	186
+peanut	188
+shellfish	190
+shellfish	192
+shellfish	194
+shellfish	196
+shellfish	198
+shellfish	200
+shellfish	202
+shellfish	204
+shellfish	206
+shellfish	208
+shellfish	210
+shellfish	212
+shellfish	214
+shellfish	216
+shellfish	218
+shellfish	220
+shellfish	222
+shellfish	224
+lactose	226
+lactose	228
+lactose	230
+lactose	232
+lactose	234
+lactose	236
+lactose	238
+lactose	240
+lactose	242
+lactose	244
+lactose	246
+lactose	248
+lactose	250
+lactose	252
+lactose	254
+lactose	256
