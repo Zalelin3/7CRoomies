@@ -6,10 +6,10 @@
 `"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld" --console --local_infile=ON`
 Replace path with wherever you installed MySQL.
 
-2. Make sure the database is set up & has the schema we want. Follow Shihao’s instructions (the flask db init, migrate, upgrade part).
+2. Make sure the database is set up & has the schema we want. Follow Shihao’s instructions (the flask db init, migrate, upgrade part). If the schema doesn't match, the files won't load.
 
 3. In the command line, we’ll modify the database as a client with all permissions.
-    * `"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql"--local-infile=1 -u root -p` and enter whatever password you chose for MySQL initially.
+    * `"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql" --local-infile=1 -u root -p` and enter whatever password you chose for MySQL initially.
     * `use dreamteam_db` to work with our database.
     * `show tables` and make sure the tables are all there.
     * Load the data from local files I’ve pushed to github within this order:
