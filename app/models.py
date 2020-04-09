@@ -42,7 +42,7 @@ class User(UserMixin, db.Model):
     bedtime = db.Column(db.Integer)
     partyFreq = db.Column(db.Integer)
     visitorFreq = db.Column(db.Integer)
-    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
+    post_id = db.relationship('Post', backref='user', lazy=True)
     status = db.relationship('Live', backref='user', uselist=False)
     ghost_users = db.relationship('Ghost_User', backref='user', lazy=True)
 
@@ -117,7 +117,7 @@ class Post(db.Model):
     title = db.Column(db.String(60), nullable=False)
     description = db.Column(db.String(200), nullable=False)
     capacity = db.Column(db.Integer)
-    owner_id = db.relationship('User', backref='posts', lazy=True)
+    owner_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable =False)
     image_1 = db.Column(db.LargeBinary)
     image_2 = db.Column(db.LargeBinary)
     image_3 = db.Column(db.LargeBinary)
