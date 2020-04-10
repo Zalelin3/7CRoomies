@@ -119,44 +119,19 @@
               <option value="4">After 10 AM</option>
             </select>
         </div>
-        <!--messy level-->
-        <div class="single_input">
-          <select class="wide" id="messy_level_range">
-              <option data-display="Messy Level">Messy Level</option>
-              <option value="1">1 (very clean)</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 (very messy)</option>
-          </select>
-        </div>
       </div>
 
       <div class="row">
         <div class="col-12">
             <h2 class="contact-title">Part 3: Social Preferences</h2>
         </div>
-        <!--social level-->
-        <div class="single_input">
-          <select class="wide" id="social_level_range">
-              <option data-display="Social Level">Social Level</option>
-              <option value="1">1 (no guests)</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 (parties OK)</option>
-          </select>
+        <!--visitor frequency-->
+        <div class="form-group">
+          <input class="form-control" name="visitorFreq" id="visitorFreq" type="number" min="0" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Visitor frequency'" placeholder = 'Monthly Visitor Frequency'>
         </div>
-        <!--noise level-->
-        <div class="single_input">
-          <select class="wide" id="noise_level_range">
-              <option data-display="Noise Level">Noise Level</option>
-              <option value="1">1 (quiet)</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 (loud)</option>
-            </select>
+        <!--party frequency-->
+        <div class="form-group">
+          <input class="form-control" name="visitorFreq" id="visitorFreq" type="number" min="0" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Visitor frequency'" placeholder = 'Monthly Party Frequency'>
         </div>
       </div>
       <div class="form-group mt-3">

@@ -17,4 +17,96 @@
         </div>
     </div>
 </div>
+
+<section class="contact-section section_padding">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="contact-title">Apartment Address:</h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input class="form-control" name="street" id="street" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Street'" placeholder = 'Street'>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input class="form-control" name="city" id="city" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'City'" placeholder = 'City'>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input class="form-control" name="state" id="state" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'State'" placeholder = 'State'>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input class="form-control" name="zipcode" id="zipcode" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Zipcode'" placeholder = 'Zipcode'>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="contact-title">Apartment Price and Capacity:</h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input class="form-control" name="price" id="price" type="number" min="0" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Price'" placeholder = 'Price'>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input class="form-control" name="nRoom" id="nRoom" type="number" min="0" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Number of rooms'" placeholder = 'Number of Rooms'>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input class="form-control" name="nBathroom" id="nBathroom" type="number" min="0" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Number of bathrooms'" placeholder = 'Number of Bathrooms'>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input class="form-control" name="size" id="size" type="number" min="0" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Size (sq ft)'" placeholder = 'Size (sq ft)'>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="contact-title">Apartment Information:</h2>
+            </div>
+            <input type="checkbox" id="petsAllowed" name="petsAllowed" value="petsAllowed">
+            <label for="petsAllowed"> Pets Allowed</label><br>
+
+            <input type="checkbox" id="substanceFree" name="substanceFree" value="substanceFree">
+            <label for="substanceFree"> Substance Free</label><br>
+
+            <input type="checkbox" id="AC" name="AC" value="AC">
+            <label for="AC"> A/C</label><br>
+
+            <input type="checkbox" id="parking" name="parking" value="parking">
+            <label for="parking"> Parking</label><br>
+
+            <input type="checkbox" id="laundry" name="laundry" value="laundry">
+            <label for="laundry"> Laundry</label><br>
+
+            <input type="checkbox" id="dishwasher" name="dishwasher" value="dishwasher">
+            <label for="dishwasher"> Dishwasher</label><br>
+
+            <input type="checkbox" id="kitchen" name="kitchen" value="kitchen">
+            <label for="kitchen"> Kitchen</label><br>
+
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <input class="form-control" name="url" id="url" type="url" onfocus="this.placeholder = ''" onblur="this.placeholder = 'URL'" placeholder = 'URL'>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+  </section>
 {% endblock %}
