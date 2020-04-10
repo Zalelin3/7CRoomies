@@ -51,30 +51,19 @@
                         <option value="7">Keck</option>
                       </select>
                 </div>
+                <!-- On/off campus switch -->
+                <input type="checkbox" id="offCampusSwitch" name="offCampusSwitch" value="offCampusOnly">
+                <label for="offCampusSwitch"> Show only off-campus posts</label><br>
+
+                <!--Sort by # spots -->
+                <input type="checkbox" id="sortNumSpots" name="sortNumSpots" value="sortNumSpots">
+                <label for="sortNumSpots"> Sort by # spots left</label><br>
             </div>
             <div class="col-lg-3 col-md-4">
-                <!-- On/off campus switch -->
-                <div class="slider-div">
-                    <label for="offCampusSwitch">Show only off-campus posts: </label>
-                    <label class="switch" id="offCampusSwitch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <div class="slider-div">
-                    <label for="sortNumSpots">Sort by # spots left: </label>
-                    <label class="switch" id="sortNumSpots">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <div class="slider-div">
-                    <label for="petsOKSwitch">Pets OK: </label>
-                    <label class="switch" id="petsOKSwitch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
+                <!--No pets -->
+                <input type="checkbox" id="noPets" name="noPets" value="noPets">
+                <label for="noPets"> No pets</label><br>
+                <!-- noise level -->
                 <div class="single_input">
                     <select class="wide" id="noise_level_range">
                         <option data-display="Noise Level">Noise Level</option>
@@ -85,6 +74,28 @@
                         <option value="5">5 (loud)</option>
                       </select>
                 </div>
+                <!-- wake up time -->
+                <div class="single_input">
+                    <select class="wide">
+                        <option data-display="Preferred Wake Up Time">Wake Up Time</option>
+                        <option value="1">Before 6 AM</option>
+                        <option value="2">6-8 AM</option>
+                        <option value="3">8-10 AM</option>
+                        <option value="4">After 10 AM</option>
+                      </select>
+                </div>
+                <!-- bed time -->
+                <div class="single_input">
+                    <select class="wide">
+                        <option data-display="Preferred Bed Time">Bed Time</option>
+                        <option value="1">Before 10 PM</option>
+                        <option value="2">10PM-12AM</option>
+                        <option value="3">12-2 AM</option>
+                        <option value="4">After 2 AM</option>
+                      </select>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
                 <!--visitor frequency-->
                 <div class="form-group">
                     <input class="form-control" name="visitorFreq" id="visitorFreq" type="number" min="0" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Visitor frequency'" placeholder = 'Monthly Visitor Frequency'>
@@ -113,26 +124,6 @@
                         <option value="5">5 (very messy)</option>
                     </select>
                 </div> -->
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <div class="single_input">
-                    <select class="wide">
-                        <option data-display="Preferred Wake Up Time">Wake Up Time</option>
-                        <option value="1">Before 6 AM</option>
-                        <option value="2">6-8 AM</option>
-                        <option value="3">8-10 AM</option>
-                        <option value="4">After 10 AM</option>
-                      </select>
-                </div>
-                <div class="single_input">
-                    <select class="wide">
-                        <option data-display="Preferred Bed Time">Bed Time</option>
-                        <option value="1">Before 10 PM</option>
-                        <option value="2">10PM-12AM</option>
-                        <option value="3">12-2 AM</option>
-                        <option value="4">After 2 AM</option>
-                      </select>
-                </div>
             </div>
             <div class="col-lg-3 col-md-12">
                 <div class="job_btn">
