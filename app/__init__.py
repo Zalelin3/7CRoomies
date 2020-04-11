@@ -22,13 +22,6 @@ def create_app(config_name):
     app.config.from_pyfile('config.py')
 
     Bootstrap(app)
-    db.init_app(app)
-    login_manager.init_app(app)
-    login_manager.login_message = "You must be logged in to access this page."
-    login_manager.login_view = "auth.login"
-    migrate = Migrate(app, db)
-
-    from app import models
 
     from .admin import admin as admin_blueprint
     app.register_blueprint(admin_blueprint, url_prefix='/admin')
@@ -39,7 +32,14 @@ def create_app(config_name):
     from .home import home as home_blueprint
     app.register_blueprint(home_blueprint)
 
-    from .user_profile import user_profile as user_profile_blueprint
-    app.register_blueprint(user_profile_blueprint)
+    #from .user_profile import user_profile as user_profile_blueprint
+    #app.register_blueprint(user_profile_blueprint)
+
+    from app import models
+    login_manager.init_app(app)
+    login_manager.login_message = "You must be logged in to access this page."
+    login_manager.login_view = "auth.login"
+    db.init_app(app)
+    migrate = Migrate(app, db)
 
     return app

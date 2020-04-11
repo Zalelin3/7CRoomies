@@ -6,7 +6,8 @@ class Config(object):
     """
 
     # Put any configurations here that are common across all environments
-
+    SECRET_KEY = 'p9Bv<3Eid9%$i01'
+    SQLALCHEMY_DATABASE_URI = "mysql://dt_admin:dt2016@localhost/dreamteam_db"
 
 class DevelopmentConfig(Config):
     """

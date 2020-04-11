@@ -1,0 +1,199 @@
+raccoon	1
+possum	2
+fish	3
+small fish	4
+parrot	5
+cockatoo	6
+finch	7
+dove	8
+pigeon	9
+falcon	10
+rabbit	1
+rat	1
+ferret	1
+squirrel	1
+lizard	1
+chameleon	1
+snake	1
+frog	1
+turtle	1
+scorpion	1
+horse	1
+goat	2
+pigeon	2
+duck	2
+geese	2
+raccoon	2
+possum	11
+fish	11
+small fish	11
+parrot	12
+cockatoo	13
+finch	14
+dove	15
+pigeon	16
+falcon	17
+rabbit	18
+rat	19
+ferret	20
+squirrel	21
+lizard	22
+chameleon	23
+snake	24
+frog	25
+turtle	26
+scorpion	27
+horse	28
+goat	28
+pigeon	28
+duck	28
+geese	28
+rabbit	28
+rabbit	29
+rabbit	30
+rabbit	31
+rabbit	32
+rabbit	33
+rabbit	34
+rabbit	35
+rabbit	36
+rabbit	37
+cat	38
+cat	39
+cat	40
+cat	41
+cat	42
+cat	43
+cat	44
+cat	45
+cat	50
+cat	60
+cat	70
+cat	80
+cat	90
+cat	100
+cat	110
+cat	120
+cat	130
+cat	140
+cat	150
+cat	160
+cat	170
+cat	180
+cat	190
+cat	200
+cat	210
+cat	220
+cat	230
+cat	240
+cat	250
+cat	260
+golden retriver	100
+golden retriver	110
+golden retriver	120
+golden retriver	130
+golden retriver	140
+golden retriver	150
+golden retriver	160
+golden retriver	170
+golden retriver	180
+golden retriver	190
+labrador	300
+labrador	310
+labrador	320
+labrador	330
+labrador	340
+labrador	350
+labrador	360
+labrador	370
+labrador	380
+labrador	390
+chihuahua	400
+chihuahua	410
+chihuahua	420
+chihuahua	430
+chihuahua	440
+chihuahua	450
+chihuahua	460
+chihuahua	470
+chihuahua	480
+chihuahua	490
+golden retriver	500
+golden retriver	401
+golden retriver	402
+golden retriver	403
+golden retriver	404
+golden retriver	405
+golden retriver	406
+golden retriver	407
+golden retriver	408
+golden retriver	409
+labrador	410
+labrador	301
+labrador	302
+labrador	303
+labrador	304
+labrador	305
+labrador	306
+labrador	307
+labrador	308
+chihuahua	309
+chihuahua	310
+chihuahua	311
+chihuahua	312
+chihuahua	313
+chihuahua	314
+chihuahua	315
+chihuahua	316
+chihuahua	317
+chihuahua	318
+dog	319
+dog	320
+dog	321
+dog	322
+dog	323
+dog	324
+dog	325
+dog	326
+dog	327
+dog	328
+dog	329
+dog	330
+dog	331
+dog	332
+dog	333
+dog	334
+dog	335
+dog	336
+dog	337
+dog	338
+dog	339
+dog	340
+dog	341
+dog	342
+dog	343
+dog	344
+dog	345
+dog	346
+dog	347
+dog	348
+dog	349
+dog	350
+dog	351
+dog	352
+dog	353
+dog	354
+dog	355
+dog	356
+dog	357
+dog	358
+dog	359
+dog	360
+dog	361
+dog	362
+dog	363
+dog	364
+dog	365
+dog	366
+dog	367
+dog	368
