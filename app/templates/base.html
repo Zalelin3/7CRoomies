@@ -54,13 +54,15 @@
                 <!-- Modify nav bar menu -->
                 <ul class="nav navbar-nav navbar-right">
                     {% if current_user.is_authenticated %}
-                    <!-- TODO: add real if/else to handle if user made profile-->
-                    <!-- If user does not have a profile -->
-                    <li><a href="{{ url_for('profile.make_profile') }}">Make A Profile</a></li>
-                    <!-- If user has a profile -->
-                    <li><a href="{{ url_for('profile.profile') }}">View My Profile</a></li>
-                    <!-- TODO: another check for if user has made post yet-->
-                    <li><a href="{{ url_for('post.make_post') }}">Make a Post</a></li>
+                        {% if current_user.school %} <!-- If user has a profile -->
+                        <li><a href="{{ url_for('profile.profile') }}">View My Profile</a></li>
+                        {% else %} <!-- If user does not have a profile -->
+                        <li><a href="{{ url_for('profile.make_profile') }}">Make A Profile</a></li>
+                        {% endif %}
+                        {% if current_user.post_id %}
+                        {% else %}
+                        <li><a href="{{ url_for('post.make_post') }}">Make a Post</a></li>
+                        {% endif %}
                     <li><a href="{{ url_for('home.dashboard') }}">Dashboard</a></li>
                     <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
                     <li><a><i class="fa fa-user"></i>  Hi, {{ current_user.username }}!</a></li>
