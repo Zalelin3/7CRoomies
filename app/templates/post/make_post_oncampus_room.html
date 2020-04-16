@@ -1,0 +1,93 @@
+<!-- app/templates/post/make_post_oncampus_room.html -->
+
+{% extends "base.html" %}
+{% block title %}Make a Profile{% endblock %}
+{% block body %}
+<div class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h1>Make a post for On-campus room housing!</h1>
+                    <h3>We will use your account preferences and additional info to make a post.</h3>
+                    <hr class="intro-divider">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="contact-section section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="contact-title">Your Info:</h2>
+            </div>
+            <div class="col-lg-8">
+                <!--college drop down-->
+                <div class="single_input">
+                    <select class="wide" >
+                        <option data-display="Category">Select Home Campus</option>
+                        <option value="1">Harvey Mudd</option>
+                        <option value="2">Pitzer</option>
+                        <option value="3">Scripps</option>
+                        <option value="4">CMC</option>
+                        <option value="5">Pomona</option>
+                        <option value="6">CGU</option>
+                        <option value="7">Keck</option>
+                        </select>
+                </div>
+            </div>
+            <!--drawNo-->
+            <div class="col-sm-6">
+                <div class="form-group" padding-top="20px">
+                    <input class="form-control" name="drawNo" id="drawNo" type="number" min="1" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Room Draw Number'" placeholder = 'Room Draw Number'>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="contact-title">Ideal Room Floor Plan:</h2>
+            </div>
+            <fieldset>      
+                <legend>What kind of room?</legend>      
+                <input type="radio" name="roomType" value="Single">Single<br>
+                <input type="radio" name="roomType" value="Double">Double<br>
+                <input type="radio" name="roomType" value="Triple">Triple<br>
+                <input type="radio" name="roomType" value="Quad">Quad<br>
+                <!-- When this form is submitted back to the server, 
+                    all these radio buttons will be represented by a single name, 
+                    but the value will be an array of 1 item -->
+            </fieldset>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="contact-title">Dorm Preferences:</h2>
+            </div>
+            <!--Dorm #1-->
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <input class="form-control" name="dorm1" id="dorm1" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Dorm Preference'" placeholder = 'First Dorm Preference'>
+                </div>
+            </div>
+            <!--Dorm #2-->
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <input class="form-control" name="dorm2" id="dorm2" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Second Dorm Preference'" placeholder = 'Second Dorm Preference'>
+                </div>
+            </div>
+            <!--Dorm #3-->
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <input class="form-control" name="dorm3" id="dorm3" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Third Dorm Preference'" placeholder = 'Third Dorm Preference'>
+                </div>
+            </div>
+        </div>
+        <div class="form-group mt-3">
+            <button type="submit" class="button button-contactForm btn_4 boxed-btn" id="submitPost">Create Post</button>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
