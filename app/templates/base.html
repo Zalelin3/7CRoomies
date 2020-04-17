@@ -7,9 +7,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favorite.ico') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <script>
     var roommateCount = 0;
+
+    var interestedUserCount = 0;
 
     function addRoommateBox(parentId) {
         var p = document.getElementById(parentId);
@@ -22,19 +25,35 @@
         emailBox.setAttribute('onfocus', "this.placeholder=''");
         p.appendChild(emailBox);
         // add first name text box
-        var nameBox = document.createElement("input");
-        nameBox.setAttribute('id', "ghostName" + roommateCount);
-        nameBox.setAttribute('type', 'text');
-        nameBox.setAttribute('placeholder', 'Enter roommate name');
-        nameBox.setAttribute('onfocus', "this.placeholder=''");
-        p.appendChild(nameBox);
+        var firstNameBox = document.createElement("input");
+        firstNameBox.setAttribute('id', "ghostFirstName" + roommateCount);
+        firstNameBox.setAttribute('type', 'text');
+        firstNameBox.setAttribute('placeholder', 'Enter roommate first name');
+        firstNameBox.setAttribute('onfocus', "this.placeholder=''");
+        p.appendChild(firstNameBox);
+        // add last name text box
+        var lastNameBox = document.createElement("input");
+        lastNameBox.setAttribute('id', "ghostLastName" + roommateCount);
+        lastNameBox.setAttribute('type', 'text');
+        lastNameBox.setAttribute('placeholder', 'Enter roommate last name');
+        lastNameBox.setAttribute('onfocus', "this.placeholder=''");
+        p.appendChild(lastNameBox);
         roommateCount += 1;
+    }
 
-        // var newElement = document.createElement(elementTag);
-        // newElement.setAttribute('id', elementId);
-        // newElement.setAttribute('type', 'text');
-        // newElement.innerHTML = html;
-        // p.appendChild(newElement);
+    function addInterestedUser(parentId) {
+        var p = document.getElementById(parentId);
+
+        // add user paragraph
+        var userP = document.createElement("p");
+        userP.setAttribute('id', "user" + interestedUserCount);
+        p.appendChild(emailBox);
+
+        // add approval link
+        var approvalLink = document.createElement("a");
+        approvalLink.setAttribute('id', "approveUser" + interestedUserCount);
+        userP.appendChild(approvalLink);
+        interestedUserCount += 1;
     }
 </script>
 <body>
@@ -54,9 +73,9 @@
                 <!-- Modify nav bar menu -->
                 <ul class="nav navbar-nav navbar-right">
                     {% if current_user.is_authenticated %}
-                        {% if current_user.school %} <!-- If user has a profile -->
+                        {% if current_user.school %} <!--If user has a profile-->
                         <li><a href="{{ url_for('profile.profile') }}">View My Profile</a></li>
-                        {% else %} <!-- If user does not have a profile -->
+                        {% else %} <!--If user does not have a profile-->
                         <li><a href="{{ url_for('profile.make_profile') }}">Make A Profile</a></li>
                         {% endif %}
                         {% if current_user.post_id %}

@@ -16,4 +16,102 @@
         </div>
     </div>
 </div>
+
+<section class="contact-section section_padding">
+    <div class="container">
+        <!--Post Section-->
+        <div class="row">
+            <div id="Post" class="tabcontent">
+                <h3>Your Current Post</h3>
+                <div class="container" style="border:1px solid black">
+                    <div class="jobs_conetent">
+                        <h4>post title</h4>
+                        <h5>{{ current_user.username }}</h5>
+                        <p>post message</p>
+                        <div class="thumb">
+                            <img src="../static/img/1.svg" id="image1" alt="">
+                            <img src="../static/img/1.svg" id="image2" alt="">
+                            <img src="../static/img/1.svg" id="image3" alt="">
+                        </div>
+                        <div class="links_locat d-flex align-items-center">
+                            <div class="location">
+                                <p> <i class="fa fa-map-marker"></i> campus/off campus address</p>
+                            </div>
+                            <div class="capacity">
+                                <p><i class="fa fa-group"></i> # of people</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <button type="submit" class="button button-contactForm btn_4 boxed-btn" id="deletePost">Delete Post</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="border:1px solid black">
+                <h4>Users interested in your post:</h4>
+                <div class="container" id="interestedUsers">
+                    <p id="user1">user 1 <a id="approveUser1" onclick="">Approve</a></p>
+                </div>
+            </div>
+        </div>
+        <!--Interests Section-->
+        <div class="row">
+            <div id="Interests" class="tabcontent">
+                <h3>Posts you are interested in</h3>
+                <div class="container" style="border:1px solid black">
+                    <div class="jobs_conetent">
+                        <h4>post title</h4>
+                        <h5>User</h5>
+                        <p>post message</p>
+                        <div class="thumb">
+                            <img src="../static/img/1.svg" id="image1" alt="">
+                            <img src="../static/img/1.svg" id="image2" alt="">
+                            <img src="../static/img/1.svg" id="image3" alt="">
+                        </div>
+                        <div class="links_locat d-flex align-items-center">
+                            <div class="location">
+                                <p> <i class="fa fa-map-marker"></i> campus/off campus address</p>
+                            </div>
+                            <div class="capacity">
+                                <p><i class="fa fa-group"></i> # of people</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <button type="submit" class="button button-contactForm btn_4 boxed-btn" id="removeInterest">Remove Interest</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Approvals Section-->
+        <div class="row">
+            <div id="Approvals" class="tabcontent">
+                <h3>Approvals you have received</h3>
+                <div class="container" style="border:1px solid black">
+                    <div class="jobs_conetent">
+                        <h4>post title</h4>
+                        <h5>User</h5>
+                        <p>post message</p>
+                        <div class="thumb">
+                            <img src="../static/img/1.svg" id="image1" alt="">
+                            <img src="../static/img/1.svg" id="image2" alt="">
+                            <img src="../static/img/1.svg" id="image3" alt="">
+                        </div>
+                        <div class="links_locat d-flex align-items-center">
+                            <div class="location">
+                                <p> <i class="fa fa-map-marker"></i> campus/off campus address</p>
+                            </div>
+                            <div class="capacity">
+                                <p><i class="fa fa-group"></i> # of people</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <button type="submit" class="button button-contactForm btn_4 boxed-btn" id="acceptApproval">Accept Approval</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
