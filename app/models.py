@@ -68,6 +68,7 @@ class User(UserMixin, db.Model):
 
     def __repr__(self):
         return '<User: {}>'.format(self.username)
+        
 
 
 # Set up user_loader
@@ -114,6 +115,8 @@ class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     post_type = db.Column(db.Boolean, default=True, index=True)
     #True for on campus post, and False for off-campus post 
+    allows_pet = db.Column(db.Boolean, default=False, nullable = False)
+    allowed_gender = db.Column(db.Integer, default = 2, nullable = False)
     title = db.Column(db.String(60), nullable=False)
     description = db.Column(db.String(200), nullable=False)
     capacity = db.Column(db.Integer)
