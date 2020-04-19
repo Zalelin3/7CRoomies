@@ -23,11 +23,12 @@
         <div class="row">
             <div id="Post" class="tabcontent">
                 <h3>Your Current Post</h3>
+                {% if post %}
                 <div class="container" style="border:1px solid black">
                     <div class="jobs_conetent">
-                        <h4>post title</h4>
+                        <h4>{{post.title}}</h4>
                         <h5>{{ current_user.username }}</h5>
-                        <p>post message</p>
+                        <p>{{post.description}}</p>
                         <div class="thumb">
                             <img src="../static/img/1.svg" id="image1" alt="">
                             <img src="../static/img/1.svg" id="image2" alt="">
@@ -35,10 +36,14 @@
                         </div>
                         <div class="links_locat d-flex align-items-center">
                             <div class="location">
-                                <p> <i class="fa fa-map-marker"></i> campus/off campus address</p>
+                                {% if post.post_type %}
+                                    <p> <i class="fa fa-map-marker"></i> {{user.school}}</p>
+                                {% else %}
+                                    <p> <i class="fa fa-map-marker"></i> url </p>
+                                {% endif %}
                             </div>
                             <div class="capacity">
-                                <p><i class="fa fa-group"></i> # of people</p>
+                                <p><i class="fa fa-group"></i>{{post.capacity}}</p>
                             </div>
                         </div>
                     </div>
@@ -46,12 +51,17 @@
                         <button type="submit" class="button button-contactForm btn_4 boxed-btn" id="deletePost">Delete Post</button>
                     </div>
                 </div>
-            </div>
-            <div class="container" style="border:1px solid black">
-                <h4>Users interested in your post:</h4>
-                <div class="container" id="interestedUsers">
-                    <p id="user1">user 1 <a id="approveUser1" onclick="">Approve</a></p>
+                <div class="container" style="border:1px solid black">
+                    <h4>Users interested in your post:</h4>
+                    <div class="container" id="interestedUsers">
+                        <p id="user1">user 1 <a id="approveUser1" onclick="">Approve</a></p>
+                    </div>
                 </div>
+                {% else %}
+                <div class="container" style="border:1px solid black">
+                    <h4>You don't have a post.</h4>
+                </div>
+                {% endif %}
             </div>
         </div>
         <!--Interests Section-->
