@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block title %}On Campus{% endblock %}
+{% block body %}
+
+<div class="job_listing_area">
+    <div class="container" margin=20px>
+        <div class="row cat_search">
+            <form method = "POST">
+                <div class="col-lg-3 col-md-4">
+                    <div class="single_input">
+                        <select class="wide" name="school" >
+                            <option data-display="Category" value="0">Select Home Campus</option>
+                            <option value="1">Harvey Mudd</option>
+                            <option value="2">Pitzer</option>
+                            <option value="3">Scripps</option>
+                            <option value="4">CMC</option>
+                            <option value="5">Pomona</option>
+                            <option value="6">CGU</option>
+                            <option value="7">Keck</option>
+                          </select>
+                    </div>
+                    <!-- On/off campus switch -->
+                    <!-- <input type="checkbox" id="offCampusSwitch" name="offCampusSwitch" value="offCampusOnly">
+                    <label for="offCampusSwitch"> Show only off-campus posts</label><br>
+     -->
+                    <!--Sort by # spots -->
+                    <!-- <input type="checkbox" id="sortNumSpots" name="sortNumSpots" value="sortNumSpots">
+                    <label for="sortNumSpots"> Sort by # spots left</label><br> -->
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <!--No pets -->
+                    <div class="single_input">
+                        <select class="wide" name="pet">
+                            <option data-display="Allowed Pet?" value = "2">Allowed Pet?</option>
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>    
+                        </select>
+                    </div>
+                    <!-- noise level -->
+                    <div class="single_input">
+                        <select class="wide" name="noiseSen">
+                            <option data-display="Noise Level" value = "0">Noise Level</option>
+                            <option value="1">1 (quiet)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (loud)</option>
+                          </select>
+                    </div>
+                    <!-- wake up time -->
+                    <div class="single_input">
+                        <select class="wide" name ="wakeup">
+                            <option data-display="Preferred Wake Up Time" value = "0">Wake Up Time</option>
+                            <option value="1">Before 6 AM</option>
+                            <option value="2">6-8 AM</option>
+                            <option value="3">8-10 AM</option>
+                            <option value="4">After 10 AM</option>
+                          </select>
+                    </div>
+                    <!-- bed time -->
+                    <div class="single_input">
+                        <select class="wide" name ="bedtime">
+                            <option data-display="Preferred Bed Time" value = "0">Bed Time</option>
+                            <option value="1">Before 10 PM</option>
+                            <option value="2">10PM-12AM</option>
+                            <option value="3">12-2 AM</option>
+                            <option value="4">After 2 AM</option>
+                          </select>
+                    </div>
+                </div>
+                <button type="submit"> Filter</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Listing the post result-->
+<div class="content-section">
+    <div class="outer">
+      <div class="middle">
+        <div class="inner">
+          <h1 style="text-align:center;">Posts</h1>
+          {% if posts %}
+            <hr class="intro-divider">
+            <div class="center">
+              <table class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <th width="15%"> Post id </th>
+                    <th width="15%"> Title </th>
+                    <th width="40%"> Description </th>
+                    <th width="15%"> Interest </th>
+                    <th width="15%"> View Owner Pofile </th>
+                  </tr>
+                </thead>
+                <tbody>
+                {% for post in posts %}
+                    <tr>
+                        <td {{post.id}} ></td>
+                        <td {{post.title}}></td>
+                        <td {{post.description}}></td>
+                        <td>
+                          <a href="{{ url_for('home.interest_post', id=post.id) }}">
+                            <i class="fa fa-pencil"></i> Interest
+                          </a>
+                        </td>
+                        <td>
+                            <a href="{{ url_for('home.userprofile', id=post.owner_id) }}">
+                                <i class="fa fa-pencil"></i> Interest
+                            </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            <div style="text-align: center">
+          {% else %}
+            <div style="text-align: center">
+                <h3> No posts have been search. </h3>
+            <hr class="intro-divider">
+          {% endif %}
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}
