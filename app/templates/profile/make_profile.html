@@ -1,0 +1,143 @@
+<!-- app/templates/profile/make_profile.html -->
+
+{% extends "base.html" %}
+{% block title %}Make a Profile{% endblock %}
+{% block body %}
+<div class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h1>You don't have a profile yet</h1>
+                    <h3>Let's make one!</h3>
+                    <hr class="intro-divider">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="contact-section section_padding">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12">
+          <h2 class="contact-title">Part 1: Basic Info</h2>
+        </div>
+        <div class="col-lg-8">
+          <!-- <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate"> -->
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder = 'Enter your name'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder = 'Enter email address'>
+                </div>
+              </div>
+              <!--Select Home Campus-->
+              <div class="col-lg-3 col-md-4">
+                <div class="single_input">
+                    <select class="wide" >
+                        <option data-display="Category">Select Home Campus</option>
+                        <option value="1">Harvey Mudd</option>
+                        <option value="2">Pitzer</option>
+                        <option value="3">Scripps</option>
+                        <option value="4">CMC</option>
+                        <option value="5">Pomona</option>
+                        <option value="6">CGU</option>
+                        <option value="7">Keck</option>
+                      </select>
+                </div>
+              </div>
+              <!--Select Gender-->
+              <div class="col-lg-3 col-md-4">
+                <div class="single_input">
+                    <select class="wide" >
+                        <option data-display="Category">Select Gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Non-Binary</option>
+                        <option value="4">Other</option>
+                      </select>
+                </div>
+              </div>
+            </div>
+          <!-- </form> -->
+        </div>
+      </div>
+
+      <div class="row" id="roommateRow">
+        <!--List other roommates-->
+        <h4>Have other roommates already? List them here:</h4>
+        <div class="form-group mt-3">
+          <button type="submit" class="button button-contactForm btn_4 boxed-btn" id="addRoommate" 
+            onclick="addRoommateBox('roommateRow')">Add Roommate</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+            <h2 class="contact-title">Part 2: Room Preferences</h2>
+        </div>
+        <!--Allergies?-->
+        <fieldset>      
+          <legend>Do you have any allergies to pets?</legend>      
+          <input type="checkbox" name="allergy" value="Cats">Cats<br>      
+          <input type="checkbox" name="allergy" value="Dogs">Dogs<br>      
+          <input type="checkbox" name="allergy" value="Other">Other<br>      
+          <!-- <br>       -->
+        </fieldset>
+        <!--Pets OK?-->
+        <div class="slider-div">
+          <label for="petsOKSwitch">Pets OK: </label>
+          <label class="switch" id="petsOKSwitch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+          </label>
+        </div>
+        <!--Bed time-->
+        <div class="single_input">
+          <select class="wide">
+              <option data-display="Typical Bed Time">Typical Bed Time</option>
+              <option value="1">Before 10 PM</option>
+              <option value="2">10PM-12AM</option>
+              <option value="3">12-2 AM</option>
+              <option value="4">After 2 AM</option>
+            </select>
+        </div>
+        <!--wake up time-->
+        <div class="single_input">
+          <select class="wide">
+              <option data-display="Typical Wake Up Time">Typical Wake Up Time</option>
+              <option value="1">Before 6 AM</option>
+              <option value="2">6-8 AM</option>
+              <option value="3">8-10 AM</option>
+              <option value="4">After 10 AM</option>
+            </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+            <h2 class="contact-title">Part 3: Social Preferences</h2>
+        </div>
+        <!--visitor frequency-->
+        <div class="form-group">
+          <input class="form-control" name="visitorFreq" id="visitorFreq" type="number" min="0" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Visitor frequency'" placeholder = 'Monthly Visitor Frequency'>
+        </div>
+        <!--party frequency-->
+        <div class="form-group">
+          <input class="form-control" name="partyFreq" id="partyFreq" type="number" min="0" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Party frequency'" placeholder = 'Monthly Party Frequency'>
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <button type="submit" class="button button-contactForm btn_4 boxed-btn" id="submitProfile">Create Profile</button>
+      </div>
+    </div>
+      
+  </section>
+{% endblock %}
