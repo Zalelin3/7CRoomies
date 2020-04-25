@@ -10,11 +10,19 @@ Replace path with wherever you installed MySQL.
 
 3. In the command line, we’ll modify the database as a client with all permissions.
     * `"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql" --local-infile=1 -u root -p` and enter whatever password you chose for MySQL initially.
+<<<<<<< HEAD
+    * `mysql> SET GLOBAL local_infile=1;`
+    * `use dreamteam_db` to work with our database.
+    * `show tables` and make sure the tables are all there.
+    * Load the data from local files I’ve pushed to github within this order:
+    * `load data local infile 'C:/Users/Lin/7CRoomies/test/test/posts.txt' into table posts lines terminated by '\r\n';`
+=======
     * `use dreamteam_db` to work with our database.
     * `show tables` and make sure the tables are all there.
     * Load the data from local files I’ve pushed to github within this order:
     * `load data local infile 'your_local_path/7CRoomies/test/test/posts.txt' into table posts lines terminated by '\r\n';`
     * `load data local infile 'your_local_path/7CRoomies/test/test/users.txt' into table user lines terminated by '\r\n';`
+>>>>>>> master
     * The rest can be loaded in any order. Just replace the name of txt file with the right file and the replace table name with the corresponding table.
 Note: There may be a few warnings raised. If it’s 1-2, it’s fine. If it’s like a hundred, it’s not reading the data in properly. You can use show warnings to see what’s going wrong.
 

@@ -32,18 +32,17 @@ class User(UserMixin, db.Model):
     is_admin = db.Column(db.Boolean, default=False)
     gender = db.Column(db.Boolean)
     school = db.Column(db.Integer, index=True)
-    has_pet = db.Column(db.Boolean)
     pets = db.relationship('Pet', backref='user', lazy=True)
     is_smoke = db.Column(db.Boolean)
     allergies = db.relationship('Allergy', backref='user', lazy=True)
     has_car = db.Column(db.Boolean)
     has_bike = db.Column(db.Boolean)
-    noise_Sen = db.Column(db.Integer, index=True)
-    wakeup = db.Column(db.Integer, index=True)
-    bedtime = db.Column(db.Integer, index=True)
-    partyFreq = db.Column(db.Integer, index=True)
-    visitorFreq = db.Column(db.Integer, index=True)
-    post_id = db.relationship('Post', backref='user', uselist=False)
+    noise_Sen = db.Column(db.Integer)
+    wakeup = db.Column(db.Integer)
+    bedtime = db.Column(db.Integer)
+    partyFreq = db.Column(db.Integer)
+    visitorFreq = db.Column(db.Integer)
+    post_id = db.relationship('Post', backref='user', lazy=True)
     status = db.relationship('Live', backref='user', uselist=False)
     ghost_users = db.relationship('Ghost_User', backref='user', lazy=True)
 
@@ -69,6 +68,7 @@ class User(UserMixin, db.Model):
 
     def __repr__(self):
         return '<User: {}>'.format(self.username)
+        
 
 
 # Set up user_loader
@@ -84,7 +84,7 @@ class Pet(db.Model):
     __tablename__ = 'pets'
 
     name = db.Column(db.String(60), primary_key=True)
-    description = db.Column(db.String(200)) #should we add description?
+    #description = db.Column(db.String(200), nullable=True) #should we add description?
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'),
         nullable=False, primary_key=True)
 
@@ -115,12 +115,15 @@ class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     post_type = db.Column(db.Boolean, default=True, index=True)
     #True for on campus post, and False for off-campus post 
+    allows_pet = db.Column(db.Boolean, default=False, nullable = False)
+    allowed_gender = db.Column(db.Integer, default = 2, nullable = False)
     title = db.Column(db.String(60), nullable=False)
-    description = db.Column(db.String(200), nullable=False, index=False)
+    description = db.Column(db.String(200), nullable=False)
     capacity = db.Column(db.Integer)
-    owner_id = db.Column(db.Integer, db.ForeignKey('user.id'),
-        nullable=False)
-    images= db.relationship('Image', backref= 'posts', lazy=True)
+    owner_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable =False)
+    image_1 = db.Column(db.LargeBinary)
+    image_2 = db.Column(db.LargeBinary)
+    image_3 = db.Column(db.LargeBinary)
     lives = db.relationship('Live', backref= 'posts', lazy=True)
 
     def __repr__(self):
@@ -134,25 +137,25 @@ class Ghost_User(db.Model):
 
     representer_id = db.Column(db.Integer, db.ForeignKey('user.id'),
         nullable=False, primary_key=True)
-    email = db.Column(db.String(60), index=True, unique=True, primary_key=True)
-    first_name = db.Column(db.String(60), index=True)
-    last_name = db.Column(db.String(60), index=True)
+    email = db.Column(db.String(60), unique=True, primary_key=True)
+    first_name = db.Column(db.String(60), nullable=False)
+    last_name = db.Column(db.String(60), nullable=False)
 
     def __repr__(self):
         return '<Ghost_User: {}>'.format(self.email)
 
-class Image(db.Model):
-    """
-    Create a Image table
-    """
-    __tablename__ = 'images'
+# class Image(db.Model):
+#     """
+#     Create a Image table
+#     """
+#     __tablename__ = 'images'
 
-    id = db.Column(db.Integer, primary_key=True)
-    images = db.Column(db.LargeBinary)
-    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), nullable=False)
+#     id = db.Column(db.Integer, primary_key=True)
+#     images = db.Column(db.LargeBinary)
+#     post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), nullable=False)
 
-    def __repr__(self):
-        return '<Images: {}>'.format(self.id)
+#     def __repr__(self):
+#         return '<Images: {}>'.format(self.id)
 
 class On_campus(db.Model):
     """
@@ -162,9 +165,9 @@ class On_campus(db.Model):
 
     post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), nullable=False, primary_key=True)
     college = db.Column(db.Integer, nullable=False)
-    dorm_1 = db.Column(db.String(60), index = True)
-    dorm_2 = db.Column(db.String(60), index = True)
-    dorm_3 = db.Column(db.String(60), index = True)
+    dorm_1 = db.Column(db.String(60))
+    dorm_2 = db.Column(db.String(60))
+    dorm_3 = db.Column(db.String(60))
     drawNo = db.Column(db.Integer)
     nSingles = db.Column(db.Integer, index=True, default = 0)
     nDoubles = db.Column(db.Integer, index=True, default = 0)
@@ -181,17 +184,16 @@ class Off_campus(db.Model):
     __tablename__ = 'offcampus'
 
     post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), nullable=False, primary_key=True)
-    price = db.Column(db.Integer, nullable=False)
-    street = db.Column(db.String(100), nullable =False)
+    price = db.Column(db.Integer)
+    street = db.Column(db.String(100))
     city = db.Column(db.String(60), index = True, nullable =False)
     state = db.Column(db.String(60), index = True, nullable =False )
-    country = db.Column(db.String(60), index = True, nullable =False)
-    zipcode = db.Column(db.Integer, index = True, nullable =False)
-    nParking = db.Column(db.Integer, index=True, default= 0)
-    nRoom = db.Column(db.Integer, index=True, default = 0)
-    nBathroom = db.Column(db.Integer, index=True, default = 0)
-    nKitchen = db.Column(db.Integer, index=True, default = 0)
-    size = db.Column(db.Integer, index=True, default = 0)
+    zipcode = db.Column(db.String(5))
+    nParking = db.Column(db.Integer, default= 0)
+    nRoom = db.Column(db.Integer, default = 0)
+    nBathroom = db.Column(db.Integer, default = 0)
+    nKitchen = db.Column(db.Integer, default = 0)
+    size = db.Column(db.Integer, default = 0)
     pet_allowed = db.Column(db.Boolean, default=False)
     substance_free = db.Column(db.Boolean, default=False)
     ac = db.Column(db.Boolean, default=False)

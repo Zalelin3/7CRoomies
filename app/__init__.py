@@ -39,7 +39,10 @@ def create_app(config_name):
     from .home import home as home_blueprint
     app.register_blueprint(home_blueprint)
 
-    from .user_profile import user_profile as user_profile_blueprint
-    app.register_blueprint(user_profile_blueprint)
+    from .profile import profile as profile_blueprint
+    app.register_blueprint(profile_blueprint)
+
+    from .post import post as post_blueprint
+    app.register_blueprint(post_blueprint)
 
     return app
