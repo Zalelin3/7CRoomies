@@ -18,7 +18,7 @@
 <div class="catagory_area">
     <div class="container" margin=20px>
         <div class="row cat_search">
-            <form method = "POST">
+            <form action= "{{ url_for('post.list_oncampuspost') }}"method = "POST">
                 <div class="col-lg-3 col-md-4">
                     <div class="single_input">
                         <select class="wide" name="school" >
@@ -103,7 +103,7 @@
                     <th width="15%"> Title </th>
                     <th width="40%"> Description </th>
                     <th width="15%"> Interest </th>
-                    <th width="15%"> View Owner Pofile </th>
+                    <th width="15%"> View Owner Profile </th>
                   </tr>
                 </thead>
                 <tbody>
