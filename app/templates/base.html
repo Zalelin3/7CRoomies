@@ -78,10 +78,11 @@
                         {% else %} <!--If user does not have a profile-->
                         <li><a href="{{ url_for('profile.make_profile') }}">Make A Profile</a></li>
                         {% endif %}
-                        {% if current_user.post_id %}
-                        {% else %}
                         <li><a href="{{ url_for('post.make_post') }}">Make a Post</a></li>
-                        {% endif %}
+                        <!-- {% if current_user.post_id %} -->
+                        <!-- {% else %} -->
+                        <!-- <li><a href="{{ url_for('post.make_post') }}">Make a Post</a></li> -->
+                        <!-- {% endif %} -->
                     <li><a href="{{ url_for('home.dashboard') }}">Dashboard</a></li>
                     <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
                     <li><a><i class="fa fa-user"></i>  Hi, {{ current_user.username }}!</a></li>
