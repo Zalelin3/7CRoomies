@@ -131,7 +131,7 @@ def spotTaken(post):
             'WHERE ghost_user.representer_id = users.id'\
             'and lives.user_id = users.id'\
             'and lives.post_id = ' + str(post)\
-            'and lives.status = 2'
+            'and lives.status = 3'
     n = db.session.execute(query).scalar()
     return n
 
