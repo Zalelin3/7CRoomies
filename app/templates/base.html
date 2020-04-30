@@ -12,7 +12,37 @@
 <script>
     var roommateCount = 0;
 
-    var interestedUserCount = 0;
+    var allergyCount = 0;
+
+    var petCount = 0;
+
+    function addPet(parentId) {
+        var p = document.getElementById(parentId);
+
+        var petTextBox = document.createElement("input");
+        petTextBox.setAttribute('id', "pet" + petCount);
+        petTextBox.setAttribute('name', "pet" + petCount);
+        petTextBox.setAttribute('type', 'text');
+        petTextBox.setAttribute('placeholder', 'Enter pet type');
+        petTextBox.setAttribute('onfocus', "this.placeholder=''");
+        p.appendChild(petTextBox);
+
+        petCount += 1;
+    }
+
+    function addAllergy(parentId) {
+        var p = document.getElementById(parentId);
+
+        var allergyTextBox = document.createElement("input");
+        allergyTextBox.setAttribute('id', "allergy" + allergyCount);
+        allergyTextBox.setAttribute('name', "allergy" + allergyCount);
+        allergyTextBox.setAttribute('type', 'text');
+        allergyTextBox.setAttribute('placeholder', 'Enter allergy type');
+        allergyTextBox.setAttribute('onfocus', "this.placeholder=''");
+        p.appendChild(allergyTextBox);
+
+        allergyCount += 1;
+    }
 
     function addRoommateBox(parentId) {
         var p = document.getElementById(parentId);
@@ -20,6 +50,7 @@
         // add email text box
         var emailBox = document.createElement("input");
         emailBox.setAttribute('id', "ghostEmail" + roommateCount);
+        emailBox.setAttribute('name', "ghostEmail" + roommateCount);
         emailBox.setAttribute('type', 'email');
         emailBox.setAttribute('placeholder', 'Enter roommate email');
         emailBox.setAttribute('onfocus', "this.placeholder=''");
@@ -27,6 +58,7 @@
         // add first name text box
         var firstNameBox = document.createElement("input");
         firstNameBox.setAttribute('id', "ghostFirstName" + roommateCount);
+        firstNameBox.setAttribute('name', "ghostFirstName" + roommateCount);
         firstNameBox.setAttribute('type', 'text');
         firstNameBox.setAttribute('placeholder', 'Enter roommate first name');
         firstNameBox.setAttribute('onfocus', "this.placeholder=''");
@@ -34,6 +66,7 @@
         // add last name text box
         var lastNameBox = document.createElement("input");
         lastNameBox.setAttribute('id', "ghostLastName" + roommateCount);
+        lastNameBox.setAttribute('name', "ghostLastName" + roommateCount);
         lastNameBox.setAttribute('type', 'text');
         lastNameBox.setAttribute('placeholder', 'Enter roommate last name');
         lastNameBox.setAttribute('onfocus', "this.placeholder=''");
@@ -41,20 +74,6 @@
         roommateCount += 1;
     }
 
-    function addInterestedUser(parentId) {
-        var p = document.getElementById(parentId);
-
-        // add user paragraph
-        var userP = document.createElement("p");
-        userP.setAttribute('id', "user" + interestedUserCount);
-        p.appendChild(emailBox);
-
-        // add approval link
-        var approvalLink = document.createElement("a");
-        approvalLink.setAttribute('id', "approveUser" + interestedUserCount);
-        userP.appendChild(approvalLink);
-        interestedUserCount += 1;
-    }
 </script>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">

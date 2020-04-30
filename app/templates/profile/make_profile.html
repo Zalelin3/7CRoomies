@@ -84,20 +84,28 @@
             <h2 class="contact-title">Part 2: Room Preferences</h2>
         </div>
         <!--Allergies?-->
-        <fieldset>      
-          <legend>Do you have any allergies to pets?</legend>      
-          <input type="checkbox" name="allergy" value="Cats">Cats<br>      
-          <input type="checkbox" name="allergy" value="Dogs">Dogs<br>      
-          <input type="checkbox" name="allergy" value="Other">Other<br>      
-          <!-- <br>       -->
-        </fieldset>
+        <div class="row" id="allergyRow">
+          <h4>Do you have any allergies?</h4>
+          <div class="form-group mt-3">
+            <button type="submit" class="button button-contactForm btn_4 boxed-btn" id="addAllergy" 
+              onclick="addAllergy('allergyRow')">Add Allergy</button>
+          </div>
+        </div>
+        <!--Pets of the user-->
+        <div class="row" id="petRow">
+          <h4>Do you have any pets?</h4>
+          <div class="form-group mt-3">
+            <button type="submit" class="button button-contactForm btn_4 boxed-btn" id="addPet" 
+              onclick="addPet('petRow')">Add Pet</button>
+          </div>
+        </div>
         <!--Pets OK?-->
-        <div class="slider-div">
-          <label for="petsOKSwitch">Pets OK: </label>
-          <label class="switch" id="petsOKSwitch">
-              <input type="checkbox">
-              <span class="slider round"></span>
-          </label>
+        <div class="single_input" style="padding-top: 20px;">
+          <select class="wide" name="pet">
+              <option data-display="Allowed Pet?" value = "2">Pets Allowed?</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>    
+          </select>
         </div>
         <!--Bed time-->
         <div class="single_input">
