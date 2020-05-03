@@ -147,7 +147,27 @@
                                 {% endif %}
                               </div>
                               <div class="links_locat d-flex align-items-center">
-                                <p> Location: {{ post.college }} </p>
+                                {% if post.college == 1 %}
+                                    <p> <i class="fa fa-map-marker"></i> Harvey Mudd</p>
+                                {% endif %}
+                                {% if post.college == 2 %}
+                                    <p> <i class="fa fa-map-marker"></i> Pitzer</p>
+                                {% endif %}
+                                {% if post.college == 3 %}
+                                    <p> <i class="fa fa-map-marker"></i> Scripps</p>
+                                {% endif %}
+                                {% if post.college == 4 %}
+                                    <p> <i class="fa fa-map-marker"></i> CMC</p>
+                                {% endif %}
+                                {% if post.college == 5 %}
+                                    <p> <i class="fa fa-map-marker"></i> Pomona</p>
+                                {% endif %}
+                                {% if post.college == 6 %}
+                                    <p> <i class="fa fa-map-marker"></i> CGU</p>
+                                {% endif %}
+                                {% if post.college == 7 %}
+                                    <p> <i class="fa fa-map-marker"></i> KGU</p>
+                                {% endif %}
                                 {% if post.dorm_1%}
                                   <p>Ideal First Dorm Pick: {{post.dorm_1}} </p>
                                 {% endif %}
