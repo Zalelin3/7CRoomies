@@ -127,9 +127,9 @@ def leavePost(postID):
 
 def spotTaken(post):
     query = 'SELECT count(ghost_user.email) + count(distinct(user.id))'\
-            'FROM users, ghost_user, lives'\
-            'WHERE ghost_user.representer_id = users.id'\
-            'and lives.user_id = users.id'\
+            'FROM user, ghost_user, lives'\
+            'WHERE ghost_user.representer_id = user.id'\
+            'and lives.user_id = user.id'\
             'and lives.post_id = ' + str(post)\
             'and lives.status = 3'
     n = db.session.execute(query).scalar()
