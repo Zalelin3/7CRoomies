@@ -33,7 +33,7 @@ def make_profile():
                 ghostEmail = request.form['ghostEmail'+str(i)]
                 g_test = Ghost_User.query.filter_by(email = ghostEmail).first()
                 if g_test is not None :
-                    flash('This email address is used.')
+                    flash('This email address is already used.')
                     return redirect(request.url)
                 ghostFriend = Ghost_User(representer_id = current_user.id, email = ghostEmail, \
                     first_name = request.form['ghostFirstName'+str(i)],\
@@ -45,7 +45,7 @@ def make_profile():
                 petName = request.form['pet'+str(j)]
                 p_test = Pet.query.filter_by(name = petName).filter_by(user_id = current_user.id).first()
                 if p_test is not None:
-                    flash('You have already add this pet to your profile.')
+                    flash('You have already added this pet to your profile.')
                     return redirect(request.url)
                 pet = Pet(name = petName, user_id = current_user.id)
                 db.session.add(pet)
@@ -55,7 +55,7 @@ def make_profile():
                 allergyName = request.form['allergy'+str(k)]
                 a_test = Allergy.query.filter_by(name = allergyName).filter_by(user_id = current_user.id).first()
                 if a_test is not None:
-                    flash('You have already add this allergy to your profile.')
+                    flash('You have already added this allergy to your profile.')
                     return redirect(request.url)
                 allergy = Allergy(name = allergyName, user_id = current_user.id)
                 db.session.add(allergy)
@@ -65,7 +65,7 @@ def make_profile():
         # redirect to the dashboard page after login
             return redirect(url_for('home.dashboard'))
         except:
-            flash('Error: Invalid Access !!!')
+            flash('Error: Invalid Access !')
             return render_template('profile/make_profile.html', title="Make a Profile")
     return render_template('profile/make_profile.html', title="Make a Profile")
 
@@ -229,7 +229,7 @@ def __spotTaken(post):
 @login_required
 def decline_interests(id1,id2):
     """
-    Decline the interest for user who is insterested in the post
+    Decline the interest for user who is interested in the post
     """
     live = Live.query.filter_by(post_id = id1).filter_by(user_id = id2).first()
     db.session.delete(live)
@@ -263,7 +263,7 @@ def remove_interest(id):
 @login_required
 def remove_ghost(id,ghostemail):
     """
-    Remove user's Ghost roomates
+    Remove user's Ghost roommates
     """
     ghost_user = Ghost_User.query.filter_by(representer_id = id).filter_by(email = ghostemail).first()
     db.session.delete(ghost_user)
