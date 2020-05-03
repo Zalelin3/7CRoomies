@@ -57,7 +57,7 @@
                 {% if live %}
                 <div class="container" style="border:1px solid black">
                     <div class="jobs_conetent">
-                        <h4>Your Current Roomates:</h4>
+                        <h4>Your Current Roommates:</h4>
                         <thead>
                             <tr>
                                 <th width= "30%"> Name</th>
@@ -72,7 +72,7 @@
                                 <td>{{ roommate.first_name }} {{roommate.last_name}}</td>
                                 <td>{{ roommate.email}}</td>
                                 <td>
-                                    {% if roomate.owner_id == current_user.id %}
+                                    {% if roommate.owner_id == current_user.id %}
                                         <a href="{{ url_for('profile.remove_roommate', id1= post.id, id2=roommate.id)}}"> X </a>
                                     {% endif %}
                                 </td>
@@ -86,7 +86,7 @@
                                 <td>{{ ghostmate.first_name }} {{ghostmate.last_name}}</td>
                                 <td>{{ ghostmate.email}}</td>
                                 <td>
-                                    <a href="{{ url_for('profile.remove_ghost', id1= current_user.id, ghostemail=ghostmate.email)}}"> Remove</a>
+                                    <a href="{{ url_for('profile.remove_ghost', id= current_user.id, ghostemail=ghostmate.email)}}"> Remove</a>
                                 </td>
                             </tr>
                         {% endfor %}
@@ -375,10 +375,10 @@
                         </div> -->
                     </div>
                     <div class="form-group mt-3">
-                        <a href="{{url('profile.accept_approval', id = approve.id)}}" class="button button-contactForm btn_4 boxed-btn" >Accept Approval</a>
+                        <a href="{{url_for('profile.accept_approval', id = approve.id)}}" class="button button-contactForm btn_4 boxed-btn" >Accept Approval</a>
                     </div>
                     <div class="form-group mt-3">
-                        <a href="{{url('profile.remove_interest', id = approve.id)}}" class="button button-contactForm btn_4 boxed-btn" >Remove Approval</a>
+                        <a href="{{url_for('profile.remove_interest', id = approve.id)}}" class="button button-contactForm btn_4 boxed-btn" >Remove Approval</a>
                     </div>
                 </div>
                 {% endfor %}

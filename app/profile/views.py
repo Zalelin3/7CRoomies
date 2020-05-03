@@ -61,7 +61,7 @@ def make_profile():
                 db.session.add(allergy)
                 db.session.commit()
                 k = k+1
-            flash('Congratulations! You have successfully build your profile. :)')
+            flash('Congratulations! You have successfully built your profile. :)')
         # redirect to the dashboard page after login
             return redirect(url_for('home.dashboard'))
         except:
@@ -183,9 +183,9 @@ def approve_interests(id1,id2):
     live = Live.query.filter_by(post_id = id1).filter_by(user_id = id2).first()
     live.status = 2
     db.session.commit()
-    return redirect(url_for('profile.ownprofile'), title="Other Profile")
+    return redirect(url_for('profile.ownprofile'))
 
-@profile.route('/profile/accept_approval/<int:id1>', methods=["GET"])
+@profile.route('/profile/accept_approval/<int:id>', methods=["GET"])
 @login_required
 def accept_approval(id):
     """
@@ -194,21 +194,21 @@ def accept_approval(id):
     current_live = Live.query.filter_by(user_id = current_user.id).filter_by(status = 3).first()
 
     if current_live is not None:
-        own_post = Post.query.filter_by(id= current_live.post_id)
+        own_post = Post.query.filter_by(id= current_live.post_id).first()
         if own_post.owner_id == current_user.id:
-            flash('Delete Your Post Before Accept the Approval')
-            redirect(request.url)
+            flash('Delete Your Post Before Accepting the Approval')
+            return redirect(url_for('profile.ownprofile'))
         else:
-            flash('Decline Your Accepted Post Before Accept the Approval')
-            redirect(request.url)
+            flash('Decline Your Accepted Post Before Accepting the Approval')
+            return redirect(url_for('profile.ownprofile'))
     # check the space of the post
     q = Ghost_User.query.filter_by(representer_id = current_user.id).count()
     n = __spotTaken(id)
-    current_post = Post.query.filter_by(id= id)
+    current_post = Post.query.filter_by(id= id).first()
     live = Live.query.filter_by(post_id = id).filter_by(user_id = current_user.id).first()
     if live is not None and q + 1 + n > current_post.capacity:
         flash('Not enough spot')
-        redirect(request.url)
+        return redirect(url_for('profile.ownprofile'))
     live.status = 3
     db.session.commit()
     return redirect(url_for('profile.ownprofile'))
@@ -218,9 +218,9 @@ def __spotTaken(post):
     Helper function to count the number of spots are taken
     """
     query = """SELECT COUNT(ghost_user.email) + COUNT(distinct(user.id))
-                FROM users, ghost_user, lives
-                WHERE ghost_user.representer_id = users.id
-                    AND lives.user_id = users.id
+                FROM user, ghost_user, lives
+                WHERE ghost_user.representer_id = user.id
+                    AND lives.user_id = user.id
                     AND lives.status = 3 AND lives.post_id = """ + str(post)            
     n = db.session.execute(query).scalar()
     return n
@@ -240,7 +240,7 @@ def decline_interests(id1,id2):
 @login_required
 def remove_roommate(id1,id2):
     """
-    Remove a roomate who accept the approve in current user's post
+    Remove a roommate who accept the approve in current user's post
     """
     live = Live.query.filter_by(post_id = id1).filter_by(user_id = id2).first()
     db.session.delete(live)
