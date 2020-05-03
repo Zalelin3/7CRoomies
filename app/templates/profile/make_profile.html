@@ -1,0 +1,172 @@
+<!-- app/templates/profile/make_profile.html -->
+{% import "bootstrap/utils.html" as utils%}
+{% extends "base.html" %}
+{% block title %}Make a Profile{% endblock %}
+{% block body %}
+<div class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                  <h1>You don't have a profile yet</h1>
+                  <h3>Let's make one!</h3>
+                  <hr class="intro-divider">
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="contact-section section_padding">
+  <div class="container">
+    <form action= "{{ url_for('profile.make_profile') }}" name="make" id="make" method = "POST">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="contact-title">Part 1: Basic Info</h2>
+        </div>
+        <br/>
+        {{utils.flashed_messages()}}
+        <br/>
+        <div class="col-lg-8">
+          <!-- <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate"> -->
+            <div class="row">
+              <div class="single_input">
+                <h4>Select Home Campus:</h4>
+                <select class="wide" name="school" required>
+                  <option disabled ="disabled" data-display="Category">Select Home Campus</option>
+                  <option value="1">Harvey Mudd</option>
+                  <option value="2">Pitzer</option>
+                  <option value="3">Scripps</option>
+                  <option value="4">CMC</option>
+                  <option value="5">Pomona</option>
+                  <option value="6">CGU</option>
+                  <option value="7">Keck</option>
+                </select>
+              </div>
+              <!--Select Gender-->
+                
+              <div class="single_input">
+                <h4>Select Your Biological Gender:</h4>
+                <select class="wide" name="gender" required>
+                  <option disabled ="disabled"  data-display="Category">Select Gender</option>
+                  <option value="1">Male</option>
+                  <option value="0">Female</option>
+                </select>
+              </div>
+
+              <div class="single_input">
+                <h4>Do you smoke?</h4>
+                <select class="wide" name="is_smoke" required>
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+
+              <div class="single_input">
+                <h4>Do you have a vehicle?</h4>
+                <select class="wide" name="has_car" required>
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+
+              <div class="single_input">
+                <h4>Do you have a bike?</h4>
+                <select class="wide" name="has_bike" required>
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>   
+        </div>
+      </div>
+
+          <div class="row" id="roommateRow">
+            <!--List other roommates-->
+            <h4>Have other roommates already? List them here:</h4>
+            <div class="form-group mt-3">
+              <p class="button button-contactForm btn_4 boxed-btn" id="addRoommate" 
+                onclick="addRoommateBox('roommateRow')">Add Roommate</p>
+            </div>
+          </div>
+
+      <div class="row">
+        <div class="col-12">
+            <h2 class="contact-title">Part 2: Room Preferences</h2>
+        </div>
+        <!--Allergies?-->
+        <div class="row" id="allergyRow">
+          <h4>Do you have any allergies?</h4>
+          <div class="form-group mt-3">
+            <p class="button button-contactForm btn_4 boxed-btn" id="addAllergy" 
+              onclick="addAllergy('allergyRow')">Add Allergy</p>
+          </div>
+        </div>
+        <!--Pets of the user-->
+        <div class="row" id="petRow">
+          <h4>Do you have any pets?</h4>
+          <div class="form-group mt-3">
+            <p class="button button-contactForm btn_4 boxed-btn" id="addPet" 
+              onclick="addPet('petRow')">Add Pet</p>
+          </div>
+        </div>
+        <div class="single_input">
+          <h4>Noise Level:</h4>
+          <select class="wide" name="noiseSen">
+              <option disabled="disabled">Noise Level</option>
+              <option value="1">1 (quiet)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (loud)</option>
+            </select>
+        </div>
+        <!--Bed time-->
+        <div class="single_input">
+          <h4>Typical Bedtime:</h4>
+          <select class="wide" name="bedtime" required>
+              <option disabled="disabled">Typical Bed Time</option>
+              <option value="1">Before 10 PM</option>
+              <option value="2">10PM-12AM</option>
+              <option value="3">12-2 AM</option>
+              <option value="4">After 2 AM</option>
+            </select>
+        </div>
+        <!--wake up time-->
+        <div class="single_input">
+          <h4>Typical Wake Up Time:</h4>
+          <select class="wide" name="wakeup" required>
+              <option disabled="disabled">Typical Wake Up Time</option>
+              <option value="1">Before 6 AM</option>
+              <option value="2">6-8 AM</option>
+              <option value="3">8-10 AM</option>
+              <option value="4">After 10 AM</option>
+            </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+            <h2 class="contact-title">Part 3: Social Preferences</h2>
+        </div>
+        <!--visitor frequency-->
+        <div class="form-group col-md-8">
+          <h4>Monthly Visitor Frequency:</h4>
+          <input class="form-control" name="visitorFreq" id="visitorFreq" type="number" min="0" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Visitor frequency'" placeholder = 'Monthly Visitor Frequency' required>
+        </div>
+        <!--party frequency-->
+        <div class="form-group col-md-8">
+          <h4>Monthly Party Frequency:</h4>
+          <input class="form-control" name="partyFreq" id="partyFreq" type="number" min="0" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Party frequency'" placeholder = 'Monthly Party Frequency' required>
+        </div>
+      </div>
+
+      <div class="form-group mt-3">
+        <button type="submit" class="button button-contactForm btn_4 boxed-btn" id="submitProfile">Create Profile</button>
+      </div>
+
+    </form>
+  </div>      
+</section>
+{% endblock %}

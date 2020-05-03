@@ -1,0 +1,387 @@
+<!-- app/templates/profile/profile.html -->
+{% import "bootstrap/utils.html" as utils%}
+{% extends "base.html" %}
+{% block title %}My Profile{% endblock %}
+{% block body %}
+<div class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h1>{{ current_user.username }}'s' Profile</h1>
+                    <hr class="intro-divider">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="contact-section section_padding">
+    <div class="container">
+        <!--Post Section-->
+        <div class="row">
+            <div id="Post" class="tabcontent">
+                <h3> My Basic Infomation</h3>
+                <div class="container" style="border:1px solid black">
+                    <div class="job_content">
+                        <h4>
+                            <li>My email is {{current_user.email}}</li>
+                            {%if current_user.school %}
+                                {% if current_user.school == 1 %}
+                                    <li>I'm from Harvey Mudd</li>
+                                {% endif %}
+                                {% if current_user.school == 2 %}
+                                    <li>I'm from Pitzer</li>
+                                {% endif %}
+                                {% if current_user.school == 3 %}
+                                    <li>I'm from Scripps</li>
+                                {% endif %}
+                                {% if current_user.school == 4 %}
+                                    <li>I'm from CMC</li>
+                                {% endif %}
+                                {% if current_user.school == 5 %}
+                                    <li>I'm from Pomona</li>
+                                {% endif %}
+                                {% if current_user.school == 6 %}
+                                    <li>I'm from CGU</li>
+                                {% endif %}
+                                {% if current_user.school == 7 %}
+                                    <li>I'm from KGU</li>
+                                {% endif %}
+                            {% endif %}
+                        </h4>
+                    </div>
+                </div>
+                {% if live %}
+                <div class="container" style="border:1px solid black">
+                    <div class="jobs_conetent">
+                        <h4>Your Current Roomates:</h4>
+                        <thead>
+                            <tr>
+                                <th width= "30%"> Name</th>
+                                <th width= "55%"> Email</th>
+                                <th width= "25"> View Profile</th>
+                                <th width= "5%"> Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {%for roommate in live%}
+                            <tr>
+                                <td>{{ roommate.first_name }} {{roommate.last_name}}</td>
+                                <td>{{ roommate.email}}</td>
+                                <td>
+                                    {% if roomate.owner_id == current_user.id %}
+                                        <a href="{{ url_for('profile.remove_roommate', id1= post.id, id2=roommate.id)}}"> X </a>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <a href="{{ url_for('profile.view_otherprofile', id = roommate.id)}}" class="button button-contactForm btn_4 boxed-btn" >View {{roommate.username}}'s' Profile </a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        {% for ghostmate in ghostlive %}
+                            <tr>
+                                <td>{{ ghostmate.first_name }} {{ghostmate.last_name}}</td>
+                                <td>{{ ghostmate.email}}</td>
+                                <td>
+                                    <a href="{{ url_for('profile.remove_ghost', id1= current_user.id, ghostemail=ghostmate.email)}}"> Remove</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </div>
+                 </div>   
+                {% endif %}
+                <h3>Your Current Post</h3>
+                {% if post%}
+                <div class="container" style="border:1px solid black">
+                    <div class="jobs_conetent">
+                        <h4>Title: {{post.title}}</h4>
+                        <h5>Owner's username: {{ current_user.username }}</h5>
+                        <p>Post's description: {{post.description}}</p>
+                        <div class="thumb">
+                            {% if post.image_1 %}
+                                <div class col-md-4>
+                                    <img src={base64.decodestring(post.image_1)} id="image1" width = "100" height = "100">
+                                </div>
+                            {% endif %}
+                            {% if post.image_2 %}
+                                <div class col-md-4>
+                                    <img src="{{post.image_2}}" id="image1" width = "100" height = "100">
+                                </div>
+                            {% endif %}
+                            {% if post.image_3 %}
+                                <div class col-md-4>
+                                    <img src="{{post.image_3}}" id="image1" width = "100" height = "100">
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="links_locat d-flex align-items-center">
+                            {% if post.post_type %}
+                                <div class="location">
+                                {% if oncampus.college == 1 %}
+                                    <p> <i class="fa fa-map-marker"></i> Harvey Mudd</p>
+                                {% endif %}
+                                {% if oncampus.college == 2 %}
+                                    <p> <i class="fa fa-map-marker"></i> Pitzer</p>
+                                {% endif %}
+                                {% if oncampus.college == 3 %}
+                                    <p> <i class="fa fa-map-marker"></i> Scripps</p>
+                                {% endif %}
+                                {% if oncampus.college == 4 %}
+                                    <p> <i class="fa fa-map-marker"></i> CMC</p>
+                                {% endif %}
+                                {% if oncampus.college == 5 %}
+                                    <p> <i class="fa fa-map-marker"></i> Pomona</p>
+                                {% endif %}
+                                {% if oncampus.college == 6 %}
+                                    <p> <i class="fa fa-map-marker"></i> CGU</p>
+                                {% endif %}
+                                {% if oncampus.college == 7 %}
+                                    <p> <i class="fa fa-map-marker"></i> KGU</p>
+                                {% endif %}
+                                </div>
+                                {% if oncampus.dorm_1 %}
+                                    <p><i class="fa fa-map-marker"></i>Top Preference : {{oncampus.dorm_1}}</p>
+                                {% endif %}
+                                {% if oncampus.dorm_2 %}
+                                    <p><i class="fa fa-map-marker"></i>Second preference : {{oncampus.dorm_2}}</p>
+                                {% endif %}
+                                {% if oncampus.dorm_3 %}
+                                    <p><i class="fa fa-map-marker"></i>Third preference : {{oncampus.dorm_3}}</p>
+                                {% endif %}
+                                <p><i class="fa fa-map-marker"></i> Room Draw Number: {{oncampus.drawNo}}</p>
+                                <p><i class="fa fa-map-marker"></i> Numbers of Single: {{oncampus.nSingles}}</p>
+                                <p><i class="fa fa-map-marker"></i> Numbers of Double: {{oncampus.nDoubles}}</p>
+                                <p><i class="fa fa-map-marker"></i> Numbers of Triple: {{oncampus.nTriples}}</p>
+                                <p><i class="fa fa-map-marker"></i> Numbers of Quad: {{oncampus.nDuadss}}</p>
+
+                            {% else %}
+                                <div class="location">
+                                    <p> <i class="fa fa-map-marker"></i> {{ offcampus.url }} </p>
+                                </div>
+                            {% endif %}
+                            <div class="capacity">
+                                <p><i class="fa fa-group"></i>{{post.capacity}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <h5><a href="{{ url_for('post.delete_post', id = post.id)}}" class="button button-contactForm btn_4 boxed-btn" >Delete Post</a></h5>
+                    </div>
+                </div>
+                
+                    {% if wait_list %}
+                    <div class="container" style="border:1px solid black">
+                        <div class="jobs_conetent">
+                            <h4>User Interested in Your Post :</h4>
+                            <thead>
+                                <tr>
+                                    <th width= "10%"> Username</th>
+                                    <th width= "15%"> Name</th>
+                                    <th width= "45%"> Email</th>
+                                    <th width= "20"> View Profile</th>
+                                    <th width= "5%"> Approve</th>
+                                    <th width= "5"> Denial</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {% for wait in wait_list %}
+                                <tr>
+                                    <td>{{ wait.username }}</td>
+                                    <td>{{ wait.first_name }} {{wait.last_name}}</td>
+                                    <td>{{ wait.email}}</td>
+                                    <td>
+                                        <a href="{{ url_for('profile.view_otherprofile', id = wait.id)}}" class="button button-contactForm btn_4 boxed-btn" >View {{wait.username}}'s' Profile </a>
+                                    </td>
+                                    <td>
+                                        <a href="{{ url_for('profile.approve_interests', id1= post.id, id2=wait.id)}}"> Y</a>
+                                    </td>
+                                    <td>
+                                        <a href="{{ url_for('profile.decline_interests', id1= post.id, id2=wait.id)}}"> X</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% elif live_in_other %}
+                <div class="container" style="border:1px solid black">
+                    <div class="jobs_conetent">
+                        <h4>Title: {{live_in_other.title}}</h4>
+                        <h5>Post's Id: {{ live_in_other.id }}</h5>
+                        <p>Post's description: {{live_in_other.description}}</p>
+                        <div class="thumb">
+                            {% if live_in_other.image_1 %}
+                                <div class col-md-4>
+                                    <img src={base64.decodestring(post.image_1)} id="image1" width = "100" height = "100">
+                                </div>
+                            {% endif %}
+                            {% if live_in_other.image_2 %}
+                                <div class col-md-4>
+                                    <img src="{{post.image_2}}" id="image1" width = "100" height = "100">
+                                </div>
+                            {% endif %}
+                            {% if live_in_other.image_3 %}
+                                <div class col-md-4>
+                                    <img src="{{post.image_3}}" id="image1" width = "100" height = "100">
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="links_locat d-flex align-items-center">
+                            <div class="location">
+                                <div class="links_locat d-flex align-items-center">
+                                    {% if live_in_other.post_type %}
+                                        <div class="location">
+                                        {% if live_in_other_on.college == 1 %}
+                                            <p> <i class="fa fa-map-marker"></i> Harvey Mudd</p>
+                                        {% endif %}
+                                        {% if live_in_other_on.college == 2 %}
+                                            <p> <i class="fa fa-map-marker"></i> Pitzer</p>
+                                        {% endif %}
+                                        {% if live_in_other_on.college == 3 %}
+                                            <p> <i class="fa fa-map-marker"></i> Scripps</p>
+                                        {% endif %}
+                                        {% if live_in_other_on.college == 4 %}
+                                            <p> <i class="fa fa-map-marker"></i> CMC</p>
+                                        {% endif %}
+                                        {% if live_in_other_on.college == 5 %}
+                                            <p> <i class="fa fa-map-marker"></i> Pomona</p>
+                                        {% endif %}
+                                        {% if live_in_other_on.college == 6 %}
+                                            <p> <i class="fa fa-map-marker"></i> CGU</p>
+                                        {% endif %}
+                                        {% if live_in_other_on.college == 7 %}
+                                            <p> <i class="fa fa-map-marker"></i> KGU</p>
+                                        {% endif %}
+                                        </div>
+                                        {% if live_in_other_on.dorm_1 %}
+                                            <p><i class="fa fa-map-marker"></i>Top Preference : {{live_in_other_on.dorm_1}}</p>
+                                        {% endif %}
+                                        {% if live_in_other_on.dorm_2 %}
+                                            <p><i class="fa fa-map-marker"></i>Second preference : {{live_in_other_on.dorm_2}}</p>
+                                        {% endif %}
+                                        {% if live_in_other_on.dorm_3 %}
+                                            <p><i class="fa fa-map-marker"></i>Third preference : {{live_in_other_on.dorm_3}}</p>
+                                        {% endif %}
+                                        <p><i class="fa fa-map-marker"></i> Room Draw Number: {{live_in_other_on.drawNo}}</p>
+                                        <p><i class="fa fa-map-marker"></i> Numbers of Single: {{live_in_other_on.nSingles}}</p>
+                                        <p><i class="fa fa-map-marker"></i> Numbers of Double: {{live_in_other_on.nDoubles}}</p>
+                                        <p><i class="fa fa-map-marker"></i> Numbers of Triple: {{live_in_other_on.nTriples}}</p>
+                                        <p><i class="fa fa-map-marker"></i> Numbers of Quad: {{live_in_other_on.nDuadss}}</p>
+        
+                                    {% else %}
+                                        <div class="location">
+                                            <p> <i class="fa fa-map-marker"></i> {{ live_in_other_off.url }} </p>
+                                        </div>
+                                    {% endif %}
+                            </div>
+                            <div class="capacity">
+                                <p><i class="fa fa-group"></i>{{live_in_other.capacity}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <a href="{{ url_for('profile.remove_interest', id = live_in_other.id)}}" class="button button-contactForm btn_4 boxed-btn" >Decline</a>
+                    </div>
+                </div>
+                {% else %}
+                <div class="container" style="border:1px solid black">
+                    <h4>You don't have a post.</h4>
+                    <a href="{{url_for('post.make_post')}}" class="button button-contactForm btn_4 boxed-btn">Let's start one!</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <!--Interests Section-->
+        {% if interest %}
+        <div class="row">
+            <div id="Interests" class="tabcontent">
+                <h3>Posts you are interested in</h3>
+                {% for like in interest %}
+                <div class="container" style="border:1px solid black">
+                    <div class="jobs_conetent">
+                        <h4>Title: {{like.title }}</h4>
+                        <h5>Post id: {{like.id}}</h5>
+                        <p>Post's description: {{like.description}}</p>
+                        <div class="thumb">
+                            {% if like.image_1 %}
+                                <div class col-md-4>
+                                    <img src="{{like.image_1}}" id="image1" width = "100" height = "100">
+                                </div>
+                            {% endif %}
+                            {% if like.image_2 %}
+                                <div class col-md-4>
+                                    <img src="{{like.image_2}}" id="image1" width = "100" height = "100">
+                                </div>
+                            {% endif %}
+                            {% if like.image_3 %}
+                                <div class col-md-4>
+                                    <img src="{{like.image_3}}" id="image1" width = "100" height = "100">
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <a href="{{ url_for('profile.remove_interest', id = like.id)}}" class="button button-contactForm btn_4 boxed-btn" >Remove Interest</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        <!--Approvals Section-->
+        {% if approves %}
+        <div class="row">
+            <div id="Approvals" class="tabcontent">
+                <h3>Approvals you have received</h3>
+                <br/>
+                {{utils.flashed_messages()}}
+                <br/>
+                {% for approve in approves %} 
+                <div class="container" style="border:1px solid black">
+                    <div class="jobs_conetent">
+                        <h4>Title: {{approve.title}}</h4>
+                        <h5>Post's id: {{approve.id}}</h5>
+                        <p>Post's description: {{approve.description}}</p>
+                        <div class="thumb">
+                            {% if approve.image_1 %}
+                                <div class col-md-4>
+                                    <img src="{{approve.image_1}}" id="image1" width = "100" height = "100">
+                                </div>
+                            {% endif %}
+                            {% if approve.image_2 %}
+                                <div class col-md-4>
+                                    <img src="{{approve.image_2}}" id="image1" width = "100" height = "100">
+                                </div>
+                            {% endif %}
+                            {% if approve.image_3 %}
+                                <div class col-md-4>
+                                    <img src="{{approve.image_3}}" id="image1" width = "100" height = "100">
+                                </div>
+                            {% endif %}
+                        </div>
+                        <!-- <div class="links_locat d-flex align-items-center">
+                            <div class="location">
+                                <p> <i class="fa fa-map-marker"></i> campus/off campus address</p>
+                            </div>
+                            <div class="capacity">
+                                <p><i class="fa fa-group"></i> # of people</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="form-group mt-3">
+                        <a href="{{url('profile.accept_approval', id = approve.id)}}" class="button button-contactForm btn_4 boxed-btn" >Accept Approval</a>
+                        <a href="{{url('profile.remove_interest', id = approve.id)}}" class="button button-contactForm btn_4 boxed-btn" >Remove Approval</a>
+                    </div> 
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

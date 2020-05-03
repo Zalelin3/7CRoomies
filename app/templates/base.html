@@ -7,7 +7,163 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favorite.ico') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<script>
+    var roommateCount = 0;
+    var addedRemoveRoommate = false;
+
+    var allergyCount = 0;
+    var addedRemoveAllergy = false;
+
+    var petCount = 0;
+    var addedRemovePet = false;
+
+    function addPet(parentId) {
+        var p = document.getElementById(parentId);
+
+        if (!addedRemovePet) {
+            var removeButton = document.createElement("p");
+            removeButton.setAttribute('class', "button button-contactForm btn_4 boxed btn");
+            removeButton.setAttribute('id', "removePet");
+            removeButton.setAttribute('onclick', "removePet('petRow')");
+            removeButton.innerHTML = "Remove Pet";
+            p.appendChild(removeButton);
+            addedRemovePet = true;
+        }
+
+        var newDiv = document.createElement("div");
+        newDiv.setAttribute('id', "divPet" + petCount);
+
+        var petTextBox = document.createElement("input");
+        petTextBox.setAttribute('id', "pet" + petCount);
+        petTextBox.setAttribute('name', "pet" + petCount);
+        petTextBox.setAttribute('type', 'text');
+        petTextBox.setAttribute('placeholder', 'Enter pet type');
+        petTextBox.setAttribute('onfocus', "this.placeholder=''");
+        petTextBox.setAttribute('required', "")
+        newDiv.appendChild(petTextBox);
+
+        p.appendChild(newDiv);
+
+        petCount += 1;
+    }
+
+    function removePet(parentId) {
+        var currDivId = "divPet" + (petCount - 1);
+        var p = document.getElementById(parentId);
+        var currDiv = document.getElementById(currDivId);
+
+        currDiv.removeChild(currDiv.childNodes[0]);
+        p.removeChild(currDiv);
+
+        petCount -= 1;
+    }
+
+    function addAllergy(parentId) {
+        var p = document.getElementById(parentId);
+
+        if (!addedRemoveAllergy) {
+            var removeButton = document.createElement("p");
+            removeButton.setAttribute('class', "button button-contactForm btn_4 boxed btn");
+            removeButton.setAttribute('id', "removeAllergy");
+            removeButton.setAttribute('onclick', "removeAllergy('allergyRow')");
+            removeButton.innerHTML = "Remove Allergy";
+            p.appendChild(removeButton);
+            addedRemoveAllergy = true;
+        }
+
+        var newDiv = document.createElement("div");
+        newDiv.setAttribute('id', "divAllergy" + allergyCount);
+
+        var allergyTextBox = document.createElement("input");
+        allergyTextBox.setAttribute('id', "allergy" + allergyCount);
+        allergyTextBox.setAttribute('name', "allergy" + allergyCount);
+        allergyTextBox.setAttribute('type', 'text');
+        allergyTextBox.setAttribute('placeholder', 'Enter allergy type');
+        allergyTextBox.setAttribute('onfocus', "this.placeholder=''");
+        allergyTextBox.setAttribute('required', "")
+        newDiv.appendChild(allergyTextBox);
+
+        p.appendChild(newDiv);
+
+        allergyCount += 1;
+    }
+
+    function removeAllergy(parentId) {
+        var currDivId = "divAllergy" + (allergyCount - 1);
+        var p = document.getElementById(parentId);
+        var currDiv = document.getElementById(currDivId);
+
+        currDiv.removeChild(currDiv.childNodes[0]);
+        p.removeChild(currDiv);
+
+        allergyCount -= 1;
+    }
+
+    function addRoommateBox(parentId) {
+        var p = document.getElementById(parentId);
+
+        if (!addedRemoveRoommate) {
+            var removeButton = document.createElement("p");
+            removeButton.setAttribute('class', "button button-contactForm btn_4 boxed btn");
+            removeButton.setAttribute('id', "removeRoommate");
+            removeButton.setAttribute('onclick', "removeRoommate('roommateRow')");
+            removeButton.innerHTML = "Remove Roommate";
+            p.appendChild(removeButton);
+            addedRemoveRoommate = true;
+        }
+
+        var newDiv = document.createElement("div");
+        newDiv.setAttribute('id', "divRoommate" + roommateCount);
+
+        // add email text box
+        var emailBox = document.createElement("input");
+        emailBox.setAttribute('id', "ghostEmail" + roommateCount);
+        emailBox.setAttribute('name', "ghostEmail" + roommateCount);
+        emailBox.setAttribute('type', 'email');
+        emailBox.setAttribute('placeholder', 'Enter roommate email');
+        emailBox.setAttribute('onfocus', "this.placeholder=''");
+        emailBox.setAttribute('required', "")
+        newDiv.appendChild(emailBox);
+        // add first name text box
+        var firstNameBox = document.createElement("input");
+        firstNameBox.setAttribute('id', "ghostFirstName" + roommateCount);
+        firstNameBox.setAttribute('name', "ghostFirstName" + roommateCount);
+        firstNameBox.setAttribute('type', 'text');
+        firstNameBox.setAttribute('placeholder', 'Enter roommate first name');
+        firstNameBox.setAttribute('onfocus', "this.placeholder=''");
+        firstNameBox.setAttribute('required', "")
+        newDiv.appendChild(firstNameBox);
+        // add last name text box
+        var lastNameBox = document.createElement("input");
+        lastNameBox.setAttribute('id', "ghostLastName" + roommateCount);
+        lastNameBox.setAttribute('name', "ghostLastName" + roommateCount);
+        lastNameBox.setAttribute('type', 'text');
+        lastNameBox.setAttribute('placeholder', 'Enter roommate last name');
+        lastNameBox.setAttribute('onfocus', "this.placeholder=''");
+        lastNameBox.setAttribute('required', "")
+        newDiv.appendChild(lastNameBox);
+        p.appendChild(newDiv);
+        roommateCount += 1;
+    }
+
+    function removeRoommate(parentId) {
+        var currDivId = "divRoommate" + (roommateCount - 1);
+        var p = document.getElementById(parentId);
+        var currDiv = document.getElementById(currDivId);
+
+        currDiv.removeChild(currDiv.childNodes[0]);
+        currDiv.removeChild(currDiv.childNodes[0]);
+        currDiv.removeChild(currDiv.childNodes[0]);
+        p.removeChild(currDiv);
+
+        roommateCount -= 1;
+    }
+
+</script>
+
+</script>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -25,6 +181,11 @@
                 <!-- Modify nav bar menu -->
                 <ul class="nav navbar-nav navbar-right">
                     {% if current_user.is_authenticated %}
+                        {% if current_user.school %} <!--If user has a profile-->
+                        <li><a href="{{ url_for('profile.ownprofile') }}">View My Profile</a></li>
+                        {% else %} <!--If user does not have a profile-->
+                        <li><a href="{{ url_for('profile.make_profile')}}">Make A Profile</a></li>
+                        {% endif %} 
                     <li><a href="{{ url_for('home.dashboard') }}">Dashboard</a></li>
                     <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
                     <li><a><i class="fa fa-user"></i>  Hi, {{ current_user.username }}!</a></li>
