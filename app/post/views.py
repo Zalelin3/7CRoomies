@@ -56,6 +56,7 @@ def list_oncampuspost():
 
     # if request.method == 'GET' - mark user as interested
     return render_template('post/oncampus.html', posts = None, title = 'On Campus Filtering')
+  
 @post.route('/make_post', methods=['GET'])
 @login_required
 def make_post():
