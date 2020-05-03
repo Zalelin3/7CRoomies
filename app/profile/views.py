@@ -61,7 +61,7 @@ def make_profile():
                 db.session.add(allergy)
                 db.session.commit()
                 k = k+1
-            flash('Congratulations! You have successfully build your profile. :)')
+            flash('Congratulations! You have successfully built your profile. :)')
         # redirect to the dashboard page after login
             return redirect(url_for('home.dashboard'))
         except:
@@ -240,7 +240,7 @@ def decline_interests(id1,id2):
 @login_required
 def remove_roommate(id1,id2):
     """
-    Remove a roomate who accept the approve in current user's post
+    Remove a roommate who accept the approve in current user's post
     """
     live = Live.query.filter_by(post_id = id1).filter_by(user_id = id2).first()
     db.session.delete(live)
