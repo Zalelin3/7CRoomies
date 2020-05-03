@@ -41,6 +41,8 @@
         petTextBox.setAttribute('type', 'text');
         petTextBox.setAttribute('placeholder', 'Enter pet type');
         petTextBox.setAttribute('onfocus', "this.placeholder=''");
+        petTextBox.setAttribute('required', "")
+
         newDiv.appendChild(petTextBox);
 
         p.appendChild(newDiv);
@@ -81,6 +83,7 @@
         allergyTextBox.setAttribute('type', 'text');
         allergyTextBox.setAttribute('placeholder', 'Enter allergy type');
         allergyTextBox.setAttribute('onfocus', "this.placeholder=''");
+        allergyTextBox.setAttribute('required', "")
         newDiv.appendChild(allergyTextBox);
 
         p.appendChild(newDiv);
@@ -122,6 +125,8 @@
         emailBox.setAttribute('type', 'email');
         emailBox.setAttribute('placeholder', 'Enter roommate email');
         emailBox.setAttribute('onfocus', "this.placeholder=''");
+        emailBox.setAttribute('required', "")
+
         newDiv.appendChild(emailBox);
         // add first name text box
         var firstNameBox = document.createElement("input");
@@ -130,6 +135,8 @@
         firstNameBox.setAttribute('type', 'text');
         firstNameBox.setAttribute('placeholder', 'Enter roommate first name');
         firstNameBox.setAttribute('onfocus', "this.placeholder=''");
+        firstNameBox.setAttribute('required', "")
+
         newDiv.appendChild(firstNameBox);
         // add last name text box
         var lastNameBox = document.createElement("input");
@@ -138,6 +145,8 @@
         lastNameBox.setAttribute('type', 'text');
         lastNameBox.setAttribute('placeholder', 'Enter roommate last name');
         lastNameBox.setAttribute('onfocus', "this.placeholder=''");
+        lastNameBox.setAttribute('required', "")
+      
         newDiv.appendChild(lastNameBox);
         p.appendChild(newDiv);
         roommateCount += 1;
@@ -157,6 +166,7 @@
     }
 
 </script>
+
 <body>
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -175,15 +185,11 @@
                 <ul class="nav navbar-nav navbar-right">
                     {% if current_user.is_authenticated %}
                         {% if current_user.school %} <!--If user has a profile-->
-                        <li><a href="{{ url_for('profile.profile') }}">View My Profile</a></li>
+                        <li><a href="{{ url_for('profile.ownprofile') }}">View My Profile</a></li>
                         {% else %} <!--If user does not have a profile-->
-                        <li><a href="{{ url_for('profile.make_profile') }}">Make A Profile</a></li>
-                        {% endif %}
-                        <li><a href="{{ url_for('post.make_post') }}">Make a Post</a></li>
-                        <!-- {% if current_user.post_id %} -->
-                        <!-- {% else %} -->
-                        <!-- <li><a href="{{ url_for('post.make_post') }}">Make a Post</a></li> -->
-                        <!-- {% endif %} -->
+                        <li><a href="{{ url_for('profile.make_profile')}}">Make A Profile</a></li>
+                        {% endif %} 
+
                     <li><a href="{{ url_for('home.dashboard') }}">Dashboard</a></li>
                     <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
                     <li><a><i class="fa fa-user"></i>  Hi, {{ current_user.username }}!</a></li>

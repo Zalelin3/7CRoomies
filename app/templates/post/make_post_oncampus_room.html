@@ -1,5 +1,6 @@
 <!-- app/templates/post/make_post_oncampus_room.html -->
 
+{% import "bootstrap/utils.html" as utils%}
 {% extends "base.html" %}
 {% block title %}Make a Profile{% endblock %}
 {% block body %}
@@ -19,36 +20,53 @@
 </div>
 
 <section class="contact-section section_padding">
+    <form action= "{{ url_for('post.make_post_oncampus_room')}}" method="POST" enctype="multipart/form-data">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <h2 class="contact-title">Post Title and Description:</h2>
             </div>
+            <br/>
+            {{utils.flashed_messages()}}
+            <br/>
             <div class="col-lg-8">
                 <div class="col-sm-6">
+                    <h5>Post's Title:</h5>
                     <div class="form-group">
                         <textarea class="form-control w-100" name="title" id="title" cols="30" rows="2"
-                           placeholder="Title"></textarea>
+                           placeholder="Title" required></textarea>
                     </div>
                     <div class="form-group">
+                        <h5>Post's Description:</h5>
                         <textarea class="form-control w-100" name="description" id="description" cols="30" rows="9"
-                           placeholder="Description"></textarea>
+                           placeholder="Description" required></textarea>
+                    </div>
+                    <div class="single_input">
+                        <h5>Allowed Gender:</h5>
+                        <select class="wide" name="allowed_gender" required>
+                          <option disabled ="disabled"  data-display="Category">Select Gender</option>
+                          <option value="1">Male</option>
+                          <option value="0">Female</option>
+                          <option value="2">Both</option>
+                        </select>
+                    </div>
+                    <div class="single_input">
+                        <h5>Do You Allow to Have Pets?</h5>
+                        <select class="wide" name="allows_pet" required>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
                     </div>
                 </div>
                 <h3>Submit up to 3 images to include with the post:</h3>
-                <form action="/action_page.php">
-                    <label for="image1">Select image 1:</label>
-                    <input type="file" id="image1" name="image1" accept="image/x-png,image/jpeg">
-                    <!-- <input type="submit"> -->
-                </form>
-                <form action="/action_page.php">
-                    <label for="image2">Select image 2:</label>
-                    <input type="file" id="image2" name="image2" accept="image/x-png,image/jpeg">
-                </form>
-                <form action="/action_page.php">
-                    <label for="image3">Select image 3:</label>
-                    <input type="file" id="image3" name="image3" accept="image/x-png,image/jpeg">
-                </form>
+                <label for="image1">Select image 1:</label>
+                <input type="file" id="image1" name="image1" accept="image/*">
+
+                <label for="image2">Select image 2:</label>
+                <input type="file" id="image2" name="image2" accept="image/*">
+
+                <label for="image3">Select image 3:</label>
+                <input type="file" id="image3" name="image3" accept="image/*">
             </div>
         </div>
         <div class="row">
@@ -58,8 +76,8 @@
             <div class="col-lg-8">
                 <!--college drop down-->
                 <div class="single_input">
-                    <select class="wide" >
-                        <option data-display="Category">Select Home Campus</option>
+                    <select class="wide" name="school" required>
+                        <option disabled="disabled" data-display="Category">Select Home Campus</option>
                         <option value="1">Harvey Mudd</option>
                         <option value="2">Pitzer</option>
                         <option value="3">Scripps</option>
@@ -67,13 +85,14 @@
                         <option value="5">Pomona</option>
                         <option value="6">CGU</option>
                         <option value="7">Keck</option>
-                        </select>
+                   </select>
                 </div>
             </div>
             <!--drawNo-->
             <div class="col-sm-6">
+                <h5>Your Room Draw Number:</h5>
                 <div class="form-group" padding-top="20px">
-                    <input class="form-control" name="drawNo" id="drawNo" type="number" min="1" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Room Draw Number'" placeholder = 'Room Draw Number'>
+                    <input class="form-control" name="drawNo" id="drawNo" type="number" min="1" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Room Draw Number'" placeholder = 'Room Draw Number' required>
                 </div>
             </div>
         </div>
@@ -81,16 +100,15 @@
             <div class="col-12">
                 <h2 class="contact-title">Ideal Room Floor Plan:</h2>
             </div>
-            <fieldset>      
-                <legend>What kind of room?</legend>      
-                <input type="radio" name="roomType" value="Single">Single<br>
-                <input type="radio" name="roomType" value="Double">Double<br>
-                <input type="radio" name="roomType" value="Triple">Triple<br>
-                <input type="radio" name="roomType" value="Quad">Quad<br>
-                <!-- When this form is submitted back to the server, 
-                    all these radio buttons will be represented by a single name, 
-                    but the value will be an array of 1 item -->
-            </fieldset>
+            <div class="single_input">
+                <h5>What kind of room?</h5>
+                <select class="wide" name="roomType" required>
+                    <option disabled="disabled" data-display="Category">Select A Room Type</option>   
+                    <option value="Double">Double</option>
+                    <option value="Triple">Triple</option>
+                    <option value="Quad">Quad</option>
+                </select>
+            </div>
         </div>
         <div class="row">
             <div class="col-12">
@@ -99,13 +117,13 @@
             <!--Dorm #1-->
             <div class="col-sm-6">
                 <div class="form-group">
-                    <input class="form-control" name="dorm1" id="dorm1" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Dorm Preference'" placeholder = 'First Dorm Preference'>
+                    <input class="form-control" name="dorm1" id="dorm1" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Dorm Preference'" placeholder = 'First Dorm Preference' required>
                 </div>
             </div>
             <!--Dorm #2-->
             <div class="col-sm-6">
                 <div class="form-group">
-                    <input class="form-control" name="dorm2" id="dorm2" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Second Dorm Preference'" placeholder = 'Second Dorm Preference'>
+                    <input class="form-control" name="dorm2" id="dorm2" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Second Dorm Preference'" placeholder = 'Second Dorm Preference' >
                 </div>
             </div>
             <!--Dorm #3-->
@@ -119,6 +137,7 @@
             <button type="submit" class="button button-contactForm btn_4 boxed-btn" id="submitPost">Create Post</button>
         </div>
     </div>
+</form>
 </section>
 
 {% endblock %}

@@ -213,6 +213,6 @@ class Live(db.Model):
 
     post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), nullable=False, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False, primary_key=True)
-    status = db.Column(db.Integer, nullable=False)
+    status = db.Column(db.Integer, nullable=False) # 1: interested 1: approved 2:accepted
     def __repr__(self):
         return '<Off campus: {}>'.format(self.status)

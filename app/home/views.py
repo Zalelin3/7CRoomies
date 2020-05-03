@@ -2,7 +2,7 @@
 
 from flask import Flask, render_template, request
 from flask_login import login_required
-import json
+
 from . import home
 
 from .. import db
@@ -24,10 +24,3 @@ def dashboard():
     """
     return render_template('home/dashboard.html', title="Dashboard")
 
-# @home.route('/filter', methods=['GET', 'POST'])
-# @login_required
-# def list_offcampuspost():
-#     """
-#     Redirecting to "view/offcampus.html'
-#     """ 
-#     return render_template('view/offcampus.html', posts = None, title='On Campus Filtering' )

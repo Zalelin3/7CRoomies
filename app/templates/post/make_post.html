@@ -19,14 +19,14 @@
 </div>
 
 <section class="contact-section section_padding">
+    <!-- <div class="container">
+        <h3><li><a href="{{ url_for('post.make_post_offcampus') }}">Make a post for Off-Campus Housing</a></li></h3>
+    </div> -->
     <div class="container">
-        <li><a href="{{ url_for('post.make_post_offcampus') }}">Make a post for Off-Campus Housing</a></li>
+        <h3><li><a href="{{ url_for('post.make_post_oncampus_suite') }}">Make a post for On-Campus Suite Housing</a></li></h3>
     </div>
     <div class="container">
-        <li><a href="{{ url_for('post.make_post_oncampus_suite') }}">Make a post for On-Campus Suite Housing</a></li>
-    </div>
-    <div class="container">
-        <li><a href="{{ url_for('post.make_post_oncampus_room') }}">Make a post for On-Campus Room Housing</a></li>
+        <h3><li><a href="{{ url_for('post.make_post_oncampus_room') }}">Make a post for On-Campus Room Housing</a></li></h3>
     </div>
 </section>
 {% endblock %}
