@@ -1,4 +1,4 @@
-# app/user_profile/__init__.py
+# app/profile/__init__.py
 
 from flask import Blueprint
 
