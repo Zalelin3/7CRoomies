@@ -61,7 +61,7 @@ def make_profile():
                 db.session.add(allergy)
                 db.session.commit()
                 k = k+1
-            flash('Congratulations! You have successfully built your profile. :)')
+            flash('Congratulations! You have successfully build your profile. :)')
         # redirect to the dashboard page after login
             return redirect(url_for('home.dashboard'))
         except:
@@ -155,18 +155,19 @@ def view_otherprofile(id):
     user = User.query.filter_by(id = id).first()
     title = user.username + "Profile"
     post = Post.query.filter_by(owner_id=user.id).first()
-    if post.post_type:
-        oncampus = On_campus.query.filter_by(post_id=post.id).first()
-    else:
-        offcampus = Off_campus.query.filter_by(post_id=post.id).first()
+    if post is not None:
+        if post.post_type:
+            oncampus = On_campus.query.filter_by(post_id=post.id).first()
+        else:
+            offcampus = Off_campus.query.filter_by(post_id=post.id).first()
     # return all users who are lived with post owner
-    livequery = """SELECT U.id, U.email, U.first_name, U.last_name, P.owner_id, U.username
-                FROM user AS U, lives AS L, posts AS P
-                WHERE L.user_id = U.id AND L.status = 3 AND
-                L.post_id = """ + str(post.id) + " AND L.user_id != " +str(user.id) \
-                +" AND P.id = L.post_id"
-    live_lists = db.session.execute(livequery)
-    live = [(dict(j.items())) for j in live_lists]
+        livequery = """SELECT U.id, U.email, U.first_name, U.last_name, P.owner_id, U.username
+                    FROM user AS U, lives AS L, posts AS P
+                    WHERE L.user_id = U.id AND L.status = 3 AND
+                    L.post_id = """ + str(post.id) + " AND L.user_id != " +str(user.id) \
+                    +" AND P.id = L.post_id"
+        live_lists = db.session.execute(livequery)
+        live = [(dict(j.items())) for j in live_lists]
     # return all of the ghost users who are following the current user
     ghostlive = Ghost_User.query.filter_by(representer_id = user.id).all()
     return render_template('profile/otherprofile.html', post = post, user = user, \
